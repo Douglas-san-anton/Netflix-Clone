@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import Styles from './Home.module.css'
 import logo from '../../assets/netflix.png'
 import tv from '../../assets/tv.png'
+import mobile from '../../assets/mobile.jpg'
+import boxshot from '../../assets/boxshot.png'
+import device from '../../assets/device.png'
 
 export const Home = () => {
   return (
@@ -57,6 +60,55 @@ export const Home = () => {
               <div className={Styles.card_animation}>
                 <video autoPlay muted loop>
                   <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type='video/mp4' />
+                </video>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section className={Styles.download}>
+        <div className={Styles.download__container}>
+          <div className={Styles.download__text}>
+            <h1>Descarga tus series para verlas offline</h1>
+            <h2>Guarda tu contenido favorito y tendrás siempre algo para ver.</h2>
+          </div>
+
+          <div className={Styles.download__img_container}>
+            <div className={Styles.download__img_animation}>
+              <img src={mobile} alt="tv_img" />
+              <div className={Styles.download__card_animation}>
+                <div className={Styles.download__card__img}>
+                  <img src={boxshot} alt="portada" />
+                </div>
+
+                <div className={Styles.download__card__text}>
+                  <p>Stranger Things</p>
+                  <p>Descargando...</p>
+                </div>
+
+                <div className={Styles.download__custom_animation}></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section className={Styles.device}>
+        <div className={Styles.device__container}>
+          <div className={Styles.device__text}>
+            <h1>Disfruta donde quieras</h1>
+            <h2>Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo adicional.</h2>
+          </div>
+
+          <div className={Styles.device__img_container}>
+            <div className={Styles.device__img_animation}>
+              <img src={device} alt="device" />
+              <div className={Styles.device__card_animation}>
+                <video autoPlay muted loop>
+                  <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" type='video/mp4' />
                 </video>
               </div>
             </div>

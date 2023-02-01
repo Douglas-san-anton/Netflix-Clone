@@ -131,12 +131,17 @@
   vertical-align: middle;
 }
 
-.watchTv {
+.watchTv,
+.download,
+.device {
   padding: 70px 45px;
   background-color: black;
+  border-bottom: 8px solid #222;
 }
 
-.watchTv__container {
+.watchTv__container,
+.download__container,
+.device__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -144,41 +149,81 @@
   max-width: 1100px;
 }
 
-.watchTv__text {
+.download__container {
+  flex-direction: row-reverse;
+}
+
+.watchTv__text,
+.device__text {
   padding: 0 3rem 0 0;
   width: 52%;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.watchTv__text h1 {
+.download__text {
+  padding: 0 0 0 3rem;
+  width: 52%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.watchTv__text h1,
+.download__text h1,
+.device__text h1 {
   font-size: 3.125rem;
   line-height: 1.1;
   margin-bottom: 0.5rem;
 }
 
-.watchTv__text h2 {
+.watchTv__text h2,
+.download__text h2,
+.device__text h2 {
   font-size: 1.625rem;
   font-weight: 400;
 }
 
-.watchTv__img_container {
+.download__text h2 {
+  padding: 0 .5em 0 0;
+}
+
+.watchTv__img_container,
+.device__img_container {
   box-sizing: border-box;
   display: flex;
   height: 100%;
   width: 48%;
 }
 
-.watchTv__img_animation {
+.watchTv__img_animation,
+.device__img_animation {
   overflow: hidden;
   position: relative;
   margin: -10% -5% -5% 0;
 }
 
-.watchTv__img_animation img {
+.watchTv__img_animation img,
+.device__img_animation img {
+  z-index: 2;
   border: 0;
   height: auto;
+  position: relative;
   max-width: 100%;
+}
+
+.device__card_animation {
+  height: 100%;
+  left: 50%;
+  max-height: 47%;
+  max-width: 63%;
+  position: absolute;
+  top: 34%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.device__card_animation video {
+  height: 100%;
+  width: 100%;
 }
 
 .card_animation {
@@ -192,3 +237,93 @@
   width: 100%;
 }
 
+.card_animation video {
+  height: 100%;
+  width: 100%;
+}
+
+.download__img_container {
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  width: 48%;
+}
+
+.download__img_animation {
+  overflow: hidden;
+  position: relative;
+  margin: -8% 0 -4% -15%;
+  min-height: 100px;
+  width: 100%;
+}
+
+.download__img_animation img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+}
+
+
+.download__card_animation {
+  padding: 0.5em 0.75em;
+  align-items: center;
+  background: #000;
+  border: 2px solid hsla(0,0%,100%,.25);
+  border-radius: 0.75em;
+  bottom: 8%;
+  box-shadow: 0 0 2em 0 #000;
+  display: flex;
+  left: 50%;
+  margin: 0 auto;
+  min-width: 15em;
+  /* padding: 0.25em 0.65em; */
+  position: absolute;
+  transform: translateX(-50%);
+  width: 60%;
+}
+
+.download__card__img {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0 1em 0 0;
+}
+
+.download__card__img img {
+  height: 5em;
+}
+
+.download__card__text {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0.3em 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.download__card__text p {
+  margin: 0;
+}
+
+.download__card__text p:first-child {
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.download__card__text p:last-child {
+  color: #0071eb;
+  font-size: .9em;
+  font-weight: 400;
+}
+
+.download__custom_animation {
+  background: url('https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif') 50% no-repeat;
+  background-size: 100%;
+  content: "";
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 3em;
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  width: 3em;
+}
