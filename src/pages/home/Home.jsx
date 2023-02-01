@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Styles from './Home.module.css'
 import logo from '../../assets/netflix.png'
+import tv from '../../assets/tv.png'
 
 export const Home = () => {
   return (
@@ -29,7 +30,7 @@ export const Home = () => {
               <div className={Styles.hero__form_email}>
 
                 <label className={Styles.hero__form_input}>
-                  <input placeholder='Email' type="text" />
+                  <input autoComplete='Email' placeholder='Email' type="email" maxLength={50} minLength={5} />
                 </label>
 
                 <button className={Styles.hero__form_btn}>
@@ -42,6 +43,27 @@ export const Home = () => {
           </div>
 
       </div>
+
+      <section className={Styles.watchTv}>
+        <div className={Styles.watchTv__container}>
+          <div className={Styles.watchTv__text}>
+            <h1>Disfruta en tu TV</h1>
+            <h2>Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</h2>
+          </div>
+
+          <div className={Styles.watchTv__img_container}>
+            <div className={Styles.watchTv__img_animation}>
+              <img src={tv} alt="tv_img" />
+              <div className={Styles.card_animation}>
+                <video autoPlay muted loop>
+                  <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type='video/mp4' />
+                </video>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
  )
 }
