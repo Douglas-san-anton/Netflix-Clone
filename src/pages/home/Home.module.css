@@ -133,7 +133,8 @@
 
 .watchTv,
 .download,
-.device {
+.device,
+.kids{
   padding: 70px 45px;
   background-color: black;
   border-bottom: 8px solid #222;
@@ -141,7 +142,8 @@
 
 .watchTv__container,
 .download__container,
-.device__container {
+.device__container,
+.kids__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -149,7 +151,8 @@
   max-width: 1100px;
 }
 
-.download__container {
+.download__container,
+.kids__container {
   flex-direction: row-reverse;
 }
 
@@ -161,7 +164,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.download__text {
+.download__text,
+.kids__text {
   padding: 0 0 0 3rem;
   width: 52%;
   color: white;
@@ -170,10 +174,15 @@
 
 .watchTv__text h1,
 .download__text h1,
-.device__text h1 {
+.device__text h1,
+.kids__text h1 {
   font-size: 3.125rem;
   line-height: 1.1;
   margin-bottom: 0.5rem;
+}
+
+.kids__text h1 {
+  margin-top: 0;
 }
 
 .watchTv__text h2,
@@ -183,12 +192,17 @@
   font-weight: 400;
 }
 
+.kids__text h2 {
+  font-size: 1.630rem;
+  font-weight: 400;
+}
 .download__text h2 {
   padding: 0 .5em 0 0;
 }
 
 .watchTv__img_container,
-.device__img_container {
+.device__img_container,
+.kids__img_container {
   box-sizing: border-box;
   display: flex;
   height: 100%;
@@ -196,14 +210,16 @@
 }
 
 .watchTv__img_animation,
-.device__img_animation {
+.device__img_animation,
+.kids__img_animation {
   overflow: hidden;
   position: relative;
   margin: -10% -5% -5% 0;
 }
 
 .watchTv__img_animation img,
-.device__img_animation img {
+.device__img_animation img,
+.kids__img_animation img {
   z-index: 2;
   border: 0;
   height: auto;
@@ -262,7 +278,6 @@
   height: auto;
   max-width: 100%;
 }
-
 
 .download__card_animation {
   padding: 0.5em 0.75em;

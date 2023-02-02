@@ -6,6 +6,8 @@ import tv from '../../assets/tv.png'
 import mobile from '../../assets/mobile.jpg'
 import boxshot from '../../assets/boxshot.png'
 import device from '../../assets/device.png'
+import kids from '../../assets/kids.png'
+import { Faq } from '../../components/faq/Faq'
 
 export const Home = () => {
   return (
@@ -116,6 +118,23 @@ export const Home = () => {
 
         </div>
       </section>
+
+      <section className={Styles.kids}>
+        <div className={Styles.kids__container}>
+          <div className={Styles.kids__text}>
+            <h1>Crea perfiles para niños</h1>
+            <h2>Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.</h2>
+          </div>
+
+          <div className={Styles.kids__img_container}>
+            <div className={Styles.kids__img_animation}>
+              <img src={kids} alt="tv_img" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Faq />
     </div>
  )
 }
