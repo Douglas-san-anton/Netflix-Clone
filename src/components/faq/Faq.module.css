@@ -33,34 +33,46 @@
 .faq__ul .faq__question {
   border: 0;
   font-weight: 400;
+  font-size: 26px;
   margin-bottom: 1px;
   padding: 0.8em 2.2em 0.8em 1.2em;
   position: relative;
   width: 100%;
+  color: white;
 }
 
 .faq__question {
   background: #303030;
   display: block;
   text-align: left;
+  cursor: pointer;
 }
 
-.faq__question span {
+.faq__question svg {
   fill: #fff;
   height: 1em;
   position: absolute;
   right: 1em;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) rotate(-45deg);
   width: 1em;
 }
 
-.svg__closed {
+/* .faq__question svg  {
+  transform: translateY(-50%);
+} */
+
+/* .svg__closed {
   transform: translateY(-50%) rotate(-45deg);
+} */
+
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .25s cubic-bezier(.5,0,.1,1);
 }
-  /* border: 0;
-  font-weight: 400;
-  margin-bottom: 1px;
-  padding: 0.8em 2.2em 0.8em 1.2em;
-  position: relative;
-  width: 100%; */
+
+.faq__answer span {
+  display: inline-block;
+  padding: 1.2em;
+}
