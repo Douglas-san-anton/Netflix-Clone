@@ -1,0 +1,40 @@
+.hero__form {
+  max-width: 950px;
+  padding-top: 0.85rem;
+  margin: 0 auto;
+}
+
+.hero__form h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin: 0;
+  padding-bottom: 20px;
+  max-width: none;
+}
+
+.hero__form_email {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__form_input > input{
+  min-height: 70px;
+  min-width: 500px;
+  outline: none;
+  padding: 0 .5em;
+}
+
+.hero__form_btn {
+  font-size: 1.875rem;
+  min-height: 70px;
+  background-color: #e50914;
+  border: 1px solid #e50914;
+  color: white;
+  padding: 0 .8em;
+}
+
+.hero__form_btn span:last-child {
+  margin-left: 10px;
+  vertical-align: middle;
+}

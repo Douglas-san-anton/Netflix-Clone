@@ -9,6 +9,7 @@ import device from '../../assets/device.png'
 import kids from '../../assets/kids.png'
 import { Faq } from '../../components/faq/Faq'
 import { Footer } from '../../components/footer/Footer'
+import { Form } from '../../components/form/Form'
 
 export const Home = () => {
   return (
@@ -31,21 +32,7 @@ export const Home = () => {
             <h1>Películas y series ilimitadas y mucho más</h1>
             <h2>Disfruta donde quieras. Cancela cuando quieras.</h2>
 
-            <form className={Styles.hero__form}>
-              <h3>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h3>
-              <div className={Styles.hero__form_email}>
-
-                <label className={Styles.hero__form_input}>
-                  <input autoComplete='Email' placeholder='Email' type="email" maxLength={50} minLength={5} />
-                </label>
-
-                <button className={Styles.hero__form_btn}>
-                  <span>Comenzar</span>
-                  <span>{'>'}</span>
-                </button>
-
-              </div>
-            </form>
+            <Form />
           </div>
 
       </div>
@@ -136,7 +123,6 @@ export const Home = () => {
       </section>
 
       <Faq />
-
       <Footer />
     </div>
  )
