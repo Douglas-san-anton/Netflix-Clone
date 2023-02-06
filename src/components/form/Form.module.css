@@ -30,6 +30,7 @@
   min-height: 70px;
   background-color: #e50914;
   border: 1px solid #e50914;
+  border-radius: 2px;
   color: white;
   padding: 0 .8em;
 }
