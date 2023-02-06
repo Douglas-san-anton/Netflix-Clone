@@ -8,6 +8,7 @@ import boxshot from '../../assets/boxshot.png'
 import device from '../../assets/device.png'
 import kids from '../../assets/kids.png'
 import { Faq } from '../../components/faq/Faq'
+import { Footer } from '../../components/footer/Footer'
 
 export const Home = () => {
   return (
@@ -135,6 +136,8 @@ export const Home = () => {
       </section>
 
       <Faq />
+
+      <Footer />
     </div>
  )
 }
