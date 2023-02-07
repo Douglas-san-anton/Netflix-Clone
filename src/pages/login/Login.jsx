@@ -49,8 +49,19 @@ export const Login = () => {
           </div>
 
           <div className={Styles.login__form_other}>
-            <div></div>
-            <div></div>
+            <div className={Styles.login__signup_now}>
+            {'¿Primera vez en Netflix? '}
+            <a target="_self" href="/">Suscríbete ahora</a>
+            {'.'}
+            </div>
+            <div className={Styles.login__recaptcha}>
+              <p>
+                <span>Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot.</span>
+                &nbsp;
+                <button className={Styles.login__recaptcha_btn}>Más info.</button>
+              </p>
+            </div>
+            <div className={Styles.login__recaptcha_span}></div>
           </div>
 
         </div>
