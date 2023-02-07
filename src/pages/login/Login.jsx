@@ -18,6 +18,7 @@ export const Login = () => {
         <div className={Styles.login__content}>
           <div className={Styles.login__form_main}>
             <h1>Inicia sesión</h1>
+
             <form method='post'>
               <div className={Styles.login__form_container}>
                 <label className={Styles.login__label_container}>
@@ -25,9 +26,33 @@ export const Login = () => {
                   <label>Email o número de teléfono</label>
                 </label>
               </div>
+
+              <div className={Styles.login__form_container}>
+                <label className={Styles.login__label_container}>
+                  <input type="password" />
+                  <label>Contraseña</label>
+                </label>
+              </div>
+
+
+              <button className={Styles.login__btn}>Iniciar sesión</button>
+              <div className={Styles.login__help}>
+                <div className={Styles.login__remember_me}>
+                  <input type="checkbox" />
+                  <label>
+                    <span className={Styles.login__remember_me_span}>Recuérdame</span>
+                  </label>
+                </div>
+                <a className={Styles.login__help_link} target="_self" href="/LoginHelp">¿Necesitas ayuda?</a>
+              </div>
             </form>
           </div>
-          <div></div>
+
+          <div className={Styles.login__form_other}>
+            <div></div>
+            <div></div>
+          </div>
+
         </div>
       </div>
       <div></div>

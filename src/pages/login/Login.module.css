@@ -61,6 +61,7 @@
   min-height: 515px;
   padding: 20px 0 30px;
   width: 100%;
+  padding: 60px 68px 40px;
 }
 
 .login__content {
@@ -69,7 +70,7 @@
 }
 
 .login__form_main {
-  padding: 60px 68px 40px;
+  flex-grow: 1;
 }
 
 .login__form_main h1 {
@@ -85,6 +86,7 @@
 
 .login__form_container {
   position: relative;
+  margin-bottom: 16px;
 }
 
 .login__form_container input {
@@ -106,4 +108,45 @@
   top: 50%;
   transform: translateY(-50%);
   transition: font .1s ease,top .1s ease,transform .1s ease;
+}
+
+.login__btn {
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 24px 0 12px;
+  width: 100%;
+  padding: 16px;
+  color: white;
+  background-color: #e50914;
+  cursor: pointer;
+}
+
+.login__help {
+  display: flex;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login__remember_me {
+  flex-grow: 1;
+}
+.login__remember_me input{
+  vertical-align: bottom;
+  background-color: #333;
+}
+
+.login__remember_me_span {
+  color: #b3b3b3;
+}
+
+.login__help_link {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.login__form_other {
+  
 }
