@@ -27,6 +27,11 @@
   text-decoration: none;
 }
 
+.footer__link:hover,
+.footer__top_a:hover {
+  text-decoration: underline;
+}
+
 .footer__links {
   margin: 0;
   padding: 0;
