@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Styles from './Login.module.css'
-import bg from '../../assets/bg.jpg'
+import bg from '../../assets/bg-login.jpg'
 import logo from '../../assets/netflix.png'
+import { FooterLogin } from '../../components/footer-login/FooterLogin'
 
 export const Login = () => {
   return (
@@ -66,7 +67,8 @@ export const Login = () => {
 
         </div>
       </div>
-      <div></div>
+
+      <FooterLogin />
     </div>
   )
 }
