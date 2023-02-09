@@ -127,6 +127,12 @@
   cursor: pointer;
 }
 
+.login__btn_link {
+  color: white;
+  text-decoration: none;
+  padding: 1rem 5rem;
+}
+
 .login__help {
   display: flex;
   font-weight: 500;

@@ -37,7 +37,9 @@ export const Login = () => {
                 </div>
 
 
-                <button className={Styles.login__btn}>Iniciar sesión</button>
+                <button className={Styles.login__btn}>
+                  <Link className={Styles.login__btn_link} to={'/browse'}>Iniciar sesión</Link>
+                </button>
                 <div className={Styles.login__help}>
                   <div className={Styles.login__remember_me}>
                     <input type="checkbox" />
