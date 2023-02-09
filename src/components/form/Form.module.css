@@ -25,8 +25,8 @@
 }
 
 .hero__form_input > input{
-  min-height: 70px;
-  min-width: 500px;
+  min-height: 3.4rem;
+  min-width: 400px;
   outline: none;
   padding: 0 1em;
   background: rgb(27 21 19 / 75%);
@@ -35,13 +35,16 @@
 }
 
 .hero__form_btn {
-  font-size: 1.875rem;
-  min-height: 70px;
+  display: flex;
+  align-items: center;
+  min-height: 3.4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
   background-color: #e50914;
   border: 1px solid #e50914;
   border-radius: 2px;
   color: white;
-  padding: 0 .8em;
 }
 
 .hero__form_btn span:last-child {
