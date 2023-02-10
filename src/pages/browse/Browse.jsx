@@ -1,8 +1,11 @@
 import React from 'react'
-import Styles from './Browse.module.css'
+import { NavBrowse } from '../../components/nav-browse/NavBrowse'
+// import Styles from './Browse.module.css'
 
 export const Browse = () => {
   return (
-    <div className={Styles.container}>Browse</div>
+    <div>
+      <NavBrowse />
+    </div>
   )
 }
