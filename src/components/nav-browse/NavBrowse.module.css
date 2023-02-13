@@ -1,0 +1,66 @@
+.pinning__header {
+  height: 70px;
+}
+
+.pinning__header_container {
+  top: 0px;
+  position: relative;
+  background: transparent;
+  z-index: 1;
+}
+
+.main_header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 14px;
+  height: 68px;
+  padding: 0 60px;
+  background-image: linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent);
+  z-index: 2;
+}
+
+.logo {
+  margin-right: 25px;
+  color: white;
+}
+
+.logo img {
+  width: 110px;
+}
+
+.tabbed__primary_navigation {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__menu {
+  display: none;
+}
+
+.menu_trigger {
+  align-items: center;
+  display: flex;
+  font-weight: 500;
+  height: 100%;
+}
+
+.navigation__tab {
+  display: block;
+  list-style: none;
+}
+
+.navigation__tab a {
+  text-decoration: none;
+  color: #fff;
+  cursor: default;
+  font-weight: 500;
+}
+
+.current__active {
+  color: #fff;
+  cursor: default;
+  font-weight: 500;
+}
