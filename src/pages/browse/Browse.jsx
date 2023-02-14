@@ -1,11 +1,12 @@
 import React from 'react'
+import { MainBrowse } from '../../components/main-browse/MainBrowse'
 import { NavBrowse } from '../../components/nav-browse/NavBrowse'
-// import Styles from './Browse.module.css'
 
 export const Browse = () => {
   return (
     <div>
       <NavBrowse />
+      <MainBrowse />
     </div>
   )
 }
