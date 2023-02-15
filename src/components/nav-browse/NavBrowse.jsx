@@ -8,7 +8,7 @@ export const NavBrowse = () => {
       <div className={Styles.pinning__header}>
         <div className={Styles.pinning__header_container}>
           <div className={Styles.main_header}>
-            <a aria-label="Netflix" className={Styles.logo} href="/browse">
+            <a aria-label="Netflix" className={Styles.logo} href="/">
               <img src={logo} alt="logo" />
             </a>
             <ul className={Styles.tabbed__primary_navigation}>
