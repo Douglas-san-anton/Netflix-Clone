@@ -12,6 +12,17 @@
   height: 100%;
 }
 
+.hero__layer {
+  bottom: 35%;
+  display: flex;
+  flex-direction: column;
+  left: 3%;
+  position: absolute;
+  top: 0;
+  width: 500px;
+  height: 80%;
+}
+
 .hero__title {
   position: absolute;
   top: 30%;
@@ -20,7 +31,7 @@
 }
 
 .hero__title_img {
-  width: 450px;
+  width: 500px;
   transition: all 1.2s ease-in-out 5s;
 }
 
@@ -35,38 +46,47 @@
 
 .hero__description p {
   color: white;
+  width: 500px;
+  font-size: 18px;
 }
 
 .hero__button_play {
-  color: #000;
-  background: #fff;
-  height: 40px;
-  border-radius: 5px;
-  padding: 0 15px;
   display: flex;
   align-items: center;
   border: none;
   position: absolute;
-  z-index: 1;
-  top: 70%;
+  top: 75%;
   left: 5%;
+  height: 45px;
+  border-radius: 5px;
+  padding: 0 15px;
+  z-index: 1;
   cursor: pointer;
+  color: #000;
+  background: #fff;
+}
+
+.hero__button_play img {
+  width: 20px;
+  height: 25px;
+  margin-right: 5px;
+  transform: rotate(-90deg);
 }
 
 .hero__button_info {
-  background: rgba(180, 180, 180, .5);
-  color: #fff;
-  height: 40px;
-  border-radius: 5px;
-  padding: 0 15px;
   display: flex;
   align-items: center;
+  height: 45px;
+  border-radius: 5px;
+  padding: 0 15px;
   border: none;
   position: absolute;
+  top: 75%;
+  left: 32%;
   z-index: 1;
-  top: 70%;
-  left: 14%;
   cursor: pointer;
+  background: rgba(180, 180, 180, .5);
+  color: #fff;
 }
 
 .hero__button_info img {
