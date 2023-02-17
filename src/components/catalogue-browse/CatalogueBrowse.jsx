@@ -1,277 +1,1367 @@
 import React from 'react'
-import Styles from './CatalogueBrowse.module.css'
+import './CatalogueBrowse.css'
 
 export const CatalogueBrowse = () => {
   return (
-    <div>
-      <div className={Styles[".lolomoRow .lolomoRow_title_card .ltr-0"]} data-list-context="genre">
-        <h2 className={Styles[".rowHeader .ltr-0"]}>
-          <a historystate="[object Object]" className={Styles[".rowTitle .ltr-0"]} href="/browse/m/genre/2236127">
-            <div className={Styles.row__header_title}>Series dramáticas aclamadas por la crítica</div>
-            <div className={Styles[".aro-row-header .more-visible"]}>
-              <div className={Styles.see__all_link}>Explorar todos</div>
-              <div className={Styles[".aro-row-chevron .icon-akiraCaretRight"]}></div>
+    <div className="catalogue">
+      <div className="catalogue-main">
+        <div className="category">
+          <h3 className="category-title">TV Comedies</h3>
+          <div className="container">
+            <div className="handle handle-left">
+              <div className="handle-symbol">‹</div>
             </div>
-          </a>
-        </h2>
-        <div className={Styles[".rowContainer .rowContainer_title_card"]} id="row-1">
-          <div className={Styles.ptrack__container}>
-            <div className={Styles[".rowContent .slider-hover-trigger-layer"]}>
-              <div className={Styles.slider}>
-                <ul className={Styles.pagination__indicator}>
-                  <li className={Styles.active}></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-                <div className={Styles[".sliderMask .showPeek"]}>
-                  <div className={Styles[".sliderContent .row-with-x-columns"]}>
-                    <div className={Styles[".slider-item .slider-item-0"]}>
-                      <div className={Styles[".title-card-container .ltr-0"]}>
-                        <div id="title-card-1-0" className={Styles.title__card}>
-                          <div className={Styles.ptrack__content} data-ui-tracking-context="%7B%22list_id%22:%22NES_26EE61AB3B334526F9163902240FD2-7BA9C8DA77A6DF-8EA41745C6_p_1676548305838%22,%22location%22:%22homeScreen%22,%22rank%22:0,%22request_id%22:%224f56b4f2-029d-433f-8c0f-f484f72377dc-57915543%22,%22row%22:1,%22track_id%22:251935179,%22unifiedEntityId%22:%22Video:80211991%22,%22video_id%22:80211991,%22image_key%22:%22sdp%7Ce4d168b1-69f0-11ed-b0fb-0a2c75563a3f%7Ces%7CCRG%22,%22supp_video_id%22:1,%22lolomo_id%22:%22NES_26EE61AB3B334526F9163902240FD2_p_1676548305838%22,%22maturityMisMatchEdgy%22:false,%22maturityMisMatchNonEdgy%22:false,%22appView%22:%22boxArt%22,%22usePresentedEvent%22:true%7D" data-tracking-uuid="47cff310-a0bd-49a3-af7a-344edf9c75c0">
-                            <a href="/watch/80211991?tctx=1%2C0%2C%2C%2C%2C%2C%2C%2C%2CVideo%3A80211991" role="link" aria-label="You" tabIndex="0" aria-hidden="false" className={Styles.slider__refocus}>
-                              <div className={Styles[".boxart-size-16x9 .boxart-container .boxart-rounded"]}>
-                                <img className={Styles[".boxart-image .boxart-image-in-padded-container"]} src="https://occ-0-7118-114.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdNYi8jEusaYOgowb-moBs-ZeOV5dcsUZY5-IWFti988lLafqN8cAR9f6YFPKQrJAbUC857DCpaJomwO01za11YKVXD-W5SWpWz7RE4wCW6BpbZRAEMGzO7sVWrGQ8y-qZz_JrwSGinNekUy3vNT8WBJW3gMscIsNQTquFJCIV7Ygxzoex6W5PsYXyZz_8-8sBzLXzIUU2cKzQgdco3XbQk85Jx5erPHlVuj-L6nKgmB7stP8OTuHNzfm-ynQCnFa4LkcROxxtZAO4UNanx5sClx-Xcg9XdqM1sA-RRzLJ0iRhs9nMIC-3ikG4puQNCdWD8rHxxSUmzdENV1jhTAiBjtNkErUUFHD9Gfx-iFEsxEsXSEPSph.jpg?r=3bf" alt="" />
-                                <div className={Styles.fallback__text_container} aria-hidden="true">
-                                  <p className={Styles.fallback__text}>You</p>
-                                </div>
-                              </div>
-                              <div className={Styles.click__to_change_JAW_indicator}>
-                                <div className={Styles.bob__jawbone_chevron}>
-                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={Styles[".svg-icon .svg-icon-chevron-down"]}>
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M19.293 7.29297L12.0001 14.5859L4.70718 7.29297L3.29297 8.70718L11.293 16.7072C11.4805 16.8947 11.7349 17.0001 12.0001 17.0001C12.2653 17.0001 12.5196 16.8947 12.7072 16.7072L20.7072 8.70718L19.293 7.29297Z" fill="currentColor"></path>
-                                  </svg>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div className={Styles.bob__container}></div>
+            <div className="slider">
+              <div className="poster-container">
+                <div className="poster-card">
+                  <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//9PFonBhy4cQy7Jz20NpMygczOkv.jpg" alt="tvshow" />
+                  <div className="poster-card-info">
+                    <div className="pc-icons">
+                      <div className="pc-icons-menu">
+                        <div className="pc-icon-play">
+                          <img className="pc-icon-play-img" alt="play" src="/assets/iconPlay-573ce638.png" />
+                        </div>
+                        <div className="pc-icon-default">
+                          <img className="pc-icon-default-img white" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAmVJREFUeJzt3D1uFFEQReG7BNgMCHYBJsKwDpIJbugNAYFTr4ffDAfwSrYlZGz3GLu7evqeTyppNNHTe0eaiUoCAAAAAAAAAAAAAAAAAOCgvRzzeczPMT8uP79oPREW82bM+Zjf16a+e914Lizg6Zhv+vfxr+bLmCdtp8Ps3uv2x7+a47bTYXY7TQewazsdZmdNB+Cms2EBFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswhgEbWNqxYyfVjZnGo6gNMVnPP6vLu804NQe/juWsXG/N98HXN0j3doURs4b1rCyDzO/BrzfO/XaFArV7svaevzce/XaFB7d7svaOvzfe/XaEAA4QHwEzD/rPonoFau1x+V7kva6qz+T2Cpleu1dbv7srY2daev7vEOrWrlem3d9piTFc2Zpi/6bAXn/HvqDt+KNfaPwpoOwE1nwwIsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUC0naYD2LWdDrOrrdtTARy3nQ6zq5XrtXX7tsevVWxs49q4Wrl+0zLL+u5g9vDhYWrb5idd7DauqfWrz1pPBAAAAAAAAAAAAAAAAADAw/wB6orZ+acWFhQAAAAASUVORK5CYII=" />
+                        </div>
+                        <div className="pc-icon-default pc-thumb">
+                          <img className="pc-icon-default-img" alt="add" src="/assets/iconThumbUp-ad099873.png" />
                         </div>
                       </div>
-                    </div>
-                    <div className={Styles[".slider-item .slider-item-1"]}>
-                      <div className={Styles[".title-card-container .ltr-0"]}>
-                        <div id="title-card-1-1" className={Styles.title__card}>
-                          <div className={Styles.ptrack__content} data-ui-tracking-context="%7B%22list_id%22:%22NES_26EE61AB3B334526F9163902240FD2-7BA9C8DA77A6DF-8EA41745C6_p_1676548305838%22,%22location%22:%22homeScreen%22,%22rank%22:1,%22request_id%22:%224f56b4f2-029d-433f-8c0f-f484f72377dc-57915543%22,%22row%22:1,%22track_id%22:251935179,%22unifiedEntityId%22:%22Video:81258637%22,%22video_id%22:81258637,%22image_key%22:%22sdp%7Cce0253e1-494a-11ed-8ec6-12afecc5f7a1%7Ces%7CCRG%22,%22supp_video_id%22:1,%22lolomo_id%22:%22NES_26EE61AB3B334526F9163902240FD2_p_1676548305838%22,%22maturityMisMatchEdgy%22:false,%22maturityMisMatchNonEdgy%22:false,%22appView%22:%22boxArt%22,%22usePresentedEvent%22:true%7D" data-tracking-uuid="9becb493-ab43-44ad-8be6-7b5816832b95">
-                            <a href="/watch/81258637?tctx=1%2C1%2C%2C%2C%2C%2C%2C%2C%2CVideo%3A81258637" role="link" aria-label="El lado oscuro: El hijo bastardo y el mismísimo diablo" tabIndex="0" aria-hidden="false" className={Styles.slider__refocus}>
-                              <div className={Styles[".boxart-size-16x9 .boxart-container .boxart-rounded"]}>
-                                <img className={Styles[".boxart-image .boxart-image-in-padded-container"]} src="https://occ-0-7118-114.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWor68yseFwApdnx4ZBQY0IR_NwgKx0wNiRiQCHMEUXjEgBxLuzL6GaJ2pZyrXYuTQgtEw8cXZ54QnhlUDkI-Tay6kMKLxc6NHnpViGvp4ggwjXnbLymbjwa9AoRmM_OH0JP.jpg?r=e29" alt="" />
-                                <div className={Styles.fallback__text_container} aria-hidden="true">
-                                  <p className={Styles.fallback__text}>El lado oscuro: El hijo bastardo y el mismísimo diablo</p>
-                                </div>
-                              </div>
-                              <div className={Styles.click__to_change_JAW_indicator}>
-                                <div className={Styles.bob__jawbone_chevron}>
-                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={Styles[".svg-icon .svg-icon-chevron-down"]}>
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M19.293 7.29297L12.0001 14.5859L4.70718 7.29297L3.29297 8.70718L11.293 16.7072C11.4805 16.8947 11.7349 17.0001 12.0001 17.0001C12.2653 17.0001 12.5196 16.8947 12.7072 16.7072L20.7072 8.70718L19.293 7.29297Z" fill="currentColor"></path>
-                                  </svg>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div className={Styles.bob__container}></div>
-                        </div>
+                      <div className="pc-icon-default pc-arrow">
+                        <img className="pc-icon-default-img" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAJcEhZcwAACxMAAAsTAQCanBgAAAXRaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDEtMjFUMjE6MDk6MjItMDM6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozZWNhYjBkNC1kYjZlLWVjNGItODA4My0wYmU5ZWU0NjA2OTUiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxNzFiMjBhYy1lZDhlLWJiNDgtOWUyZi1hNDUwYjAwZWQ3MjciPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjE3MWIyMGFjLWVkOGUtYmI0OC05ZTJmLWE0NTBiMDBlZDcyNyIgc3RFdnQ6d2hlbj0iMjAyMy0wMS0yMVQyMTowOToyMi0wMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHN0RXZ0OndoZW49IjIwMjMtMDEtMjFUMjE6MjQ6MDYtMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1w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" />
                       </div>
                     </div>
-                    <div className={Styles[".slider-item .slider-item-2"]}>
-                      <div className={Styles[".title-card-container .ltr-0"]}>
-                        <div id="title-card-1-2" className={Styles.title__card}>
-                          <div className={Styles.ptrack__content} data-ui-tracking-context="%7B%22list_id%22:%22NES_26EE61AB3B334526F9163902240FD2-7BA9C8DA77A6DF-8EA41745C6_p_1676548305838%22,%22location%22:%22homeScreen%22,%22rank%22:2,%22request_id%22:%224f56b4f2-029d-433f-8c0f-f484f72377dc-57915543%22,%22row%22:1,%22track_id%22:251935179,%22unifiedEntityId%22:%22Video:70195800%22,%22video_id%22:70195800,%22image_key%22:%22sdp%7C9f334932-73b6-11e7-98f1-0e69713437c6%7Ces%7CCRG%22,%22supp_video_id%22:1,%22lolomo_id%22:%22NES_26EE61AB3B334526F9163902240FD2_p_1676548305838%22,%22maturityMisMatchEdgy%22:false,%22maturityMisMatchNonEdgy%22:false,%22appView%22:%22boxArt%22,%22usePresentedEvent%22:true%7D" data-tracking-uuid="b216324c-9577-4f9b-a62e-089170cb4575" >
-                            <a href="/watch/70195800?tctx=1%2C2%2C%2C%2C%2C%2C%2C%2C%2CVideo%3A70195800" role="link" aria-label="La ley de los audaces" tabIndex="0" aria-hidden="false" className={Styles.slider__refocus}>
-                              <div className={Styles[".boxart-size-16x9 .boxart-container .boxart-rounded"]}>
-                                <img className={Styles[".boxart-image .boxart-image-in-padded-container"]} src="https://occ-0-7118-114.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcfRfbuwY-FZH5A3VqkPPdj2c3PmY8sys6FBeWEb3mtg7AoovAQtUBLQKzYL_831pH_dxYne-ityUepPs4sO_1diRi3fmeLKXb0.webp?r=21e" alt="" />
-                                <div className={Styles.fallback__text_container} aria-hidden="true" >
-                                  <p className={Styles.fallback__text}> La ley de los audaces </p>
-                                </div>
-                              </div>
-                              <div className={Styles.click__to_change_JAW_indicator}>
-                                <div className={Styles.bob__jawbone_chevron}>
-                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={Styles[".svg-icon .svg-icon-chevron-down"]}>
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M19.293 7.29297L12.0001 14.5859L4.70718 7.29297L3.29297 8.70718L11.293 16.7072C11.4805 16.8947 11.7349 17.0001 12.0001 17.0001C12.2653 17.0001 12.5196 16.8947 12.7072 16.7072L20.7072 8.70718L19.293 7.29297Z" fill="currentColor"></path>
-                                  </svg>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div className={Styles.bob__container}></div>
-                        </div>
-                      </div>
+                    <div className="pc-seasons">
+                      <div className="pc-seasons-match">99% Match </div>
+                      <div className="pc-seasons-clasif">13 +</div>
+                      <div className="pc-seasons-episodes">2 Seasons</div>
+                      <div className="pc-seasons-quality">HD</div>
                     </div>
-                    <div className={Styles[".slider-item .slider-item-3"]}>
-                      <div className={Styles[".title-card-container .ltr-0"]}>
-                        <div id="title-card-1-3" className={Styles.title__card}>
-                          <div className={Styles.ptrack__content} data-ui-tracking-context="%7B%22list_id%22:%22NES_26EE61AB3B334526F9163902240FD2-7BA9C8DA77A6DF-8EA41745C6_p_1676548305838%22,%22location%22:%22homeScreen%22,%22rank%22:3,%22request_id%22:%224f56b4f2-029d-433f-8c0f-f484f72377dc-57915543%22,%22row%22:1,%22track_id%22:251935179,%22unifiedEntityId%22:%22Video:81113742%22,%22video_id%22:81113742,%22image_key%22:%22sdp%7Caebdda60-a466-11ec-b6c6-129a29cdddbb%7Ces%22,%22supp_video_id%22:1,%22lolomo_id%22:%22NES_26EE61AB3B334526F9163902240FD2_p_1676548305838%22,%22maturityMisMatchEdgy%22:false,%22maturityMisMatchNonEdgy%22:false,%22appView%22:%22boxArt%22,%22usePresentedEvent%22:true%7D" data-tracking-uuid="e2edfbfa-4641-43b9-8f88-25310c3e8001" >
-                            <a href="/watch/81113742?tctx=1%2C3%2C%2C%2C%2C%2C%2C%2C%2CVideo%3A81113742" role="link" aria-label="Clark" tabIndex="0" aria-hidden="false" className={Styles.slider__refocus}>
-                              <div className={Styles[".boxart-size-16x9 .boxart-container .boxart-rounded"]}>
-                                <img className={Styles[".boxart-image .boxart-image-in-padded-container"]} src="https://occ-0-7118-114.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWYcmSUbxm1lxmBhg31Da5hf8QJ-saEbx2AnWBqkl4wY1P06FzUEYJ60JauSFYCJxEJbUVk0Ey6XNdewfoqorxDj49LpfUR-ejUo1BsOCjbwwuYzNhxE5NYUzdkty2V5M8Sm.jpg?r=e08" alt="" />
-                                <div className={Styles.fallback__text_container} aria-hidden="true" >
-                                  <p className={Styles.fallback__text}> Clark</p>
-                                </div>
-                              </div>
-                              <div className={Styles.click__to_change_JAW_indicator}>
-                                <div className={Styles.bob__jawbone_chevron}>
-                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={Styles[".svg-icon .svg-icon-chevron-down"]}>
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M19.293 7.29297L12.0001 14.5859L4.70718 7.29297L3.29297 8.70718L11.293 16.7072C11.4805 16.8947 11.7349 17.0001 12.0001 17.0001C12.2653 17.0001 12.5196 16.8947 12.7072 16.7072L20.7072 8.70718L19.293 7.29297Z" fill="currentColor"></path>
-                                  </svg>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div className={Styles.bob__container}></div>
-                        </div>
+                    <div className="pc-genres">
+                      <div className="pc-genres-single">
+                        <div className="pc-genres-name">Sci-Fi &amp; Fantasy</div>
+                        <div className="pc-genre-divider"></div>
                       </div>
-                    </div>
-                    <div className={Styles[".slider-item .slider-item-4"]}>
-                      <div className={Styles[".title-card-container .ltr-0"]}>
-                        <div id="title-card-1-4" className={Styles.title__card}>
-                          <div className={Styles.ptrack__content} data-ui-tracking-context="%7B%22list_id%22:%22NES_26EE61AB3B334526F9163902240FD2-7BA9C8DA77A6DF-8EA41745C6_p_1676548305838%22,%22location%22:%22homeScreen%22,%22rank%22:4,%22request_id%22:%224f56b4f2-029d-433f-8c0f-f484f72377dc-57915543%22,%22row%22:1,%22track_id%22:251935179,%22unifiedEntityId%22:%22Video:81112336%22,%22video_id%22:81112336,%22image_key%22:%22sdp%7Ca2c8f240-3b64-11ed-971f-0aae5bfef35d%7Ces%7CCRG%22,%22supp_video_id%22:1,%22lolomo_id%22:%22NES_26EE61AB3B334526F9163902240FD2_p_1676548305838%22,%22maturityMisMatchEdgy%22:false,%22maturityMisMatchNonEdgy%22:false,%22appView%22:%22boxArt%22,%22usePresentedEvent%22:true%7D" data-tracking-uuid="13a5a56f-33e3-4725-8a5d-cc2e1c08f06d" >
-                            <a href="/watch/81112336?tctx=1%2C4%2C%2C%2C%2C%2C%2C%2C%2CVideo%3A81112336" role="link" aria-label="El club de la medianoche" tabIndex="0" aria-hidden="false" className={Styles.slider__refocus}>
-                              <div className={Styles[".boxart-size-16x9 .boxart-container .boxart-rounded"]}>
-                                <img className={Styles[".boxart-image .boxart-image-in-padded-container"]} src="https://occ-0-7118-114.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYw8pCxWSWBB5Ax_lDEIIaQQlq5EsOS2gpgGO9ysepbR_AdEzxttznI5B4rw6DVdBHp0Li4dxYNVS9bvYcL7ejLz6DcQUanWtC0EsJTLXuckO9tJTdRc9KwpnUSUPzU2WhBS.jpg?r=229" alt="" />
-                                <div className={Styles.fallback__text_container} aria-hidden="true" >
-                                  <p className={Styles.fallback__text}> El club de la medianoche</p>
-                                </div>
-                              </div>
-                              <div className={Styles.click__to_change_JAW_indicator}>
-                                <div className={Styles.bob__jawbone_chevron}>
-                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={Styles[".svg-icon .svg-icon-chevron-down"]}>
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M19.293 7.29297L12.0001 14.5859L4.70718 7.29297L3.29297 8.70718L11.293 16.7072C11.4805 16.8947 11.7349 17.0001 12.0001 17.0001C12.2653 17.0001 12.5196 16.8947 12.7072 16.7072L20.7072 8.70718L19.293 7.29297Z" fill="currentColor"></path>
-                                  </svg>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div className={Styles.bob__container}></div>
-                        </div>
+                      <div className="pc-genres-single">
+                        <div className="pc-genres-name">Mystery</div>
+                        <div className="pc-genre-divider"></div>
                       </div>
-                    </div>
-                    <div className={Styles[".slider-item .slider-item-5"]}>
-                      <div className={Styles[".title-card-container .ltr-0"]}>
-                        <div id="title-card-1-5" className={Styles.title__card}>
-                          <div className={Styles.ptrack__content} data-ui-tracking-context="%7B%22list_id%22:%22NES_26EE61AB3B334526F9163902240FD2-7BA9C8DA77A6DF-8EA41745C6_p_1676548305838%22,%22location%22:%22homeScreen%22,%22rank%22:5,%22request_id%22:%224f56b4f2-029d-433f-8c0f-f484f72377dc-57915543%22,%22row%22:1,%22track_id%22:251935179,%22unifiedEntityId%22:%22Video:81518991%22,%22video_id%22:81518991,%22image_key%22:%22sdp%7C14570c01-e384-11ec-8a09-1239fe5e16cd%7Ces%7CCRG%22,%22supp_video_id%22:1,%22lolomo_id%22:%22NES_26EE61AB3B334526F9163902240FD2_p_1676548305838%22,%22maturityMisMatchEdgy%22:false,%22maturityMisMatchNonEdgy%22:false,%22appView%22:%22boxArt%22,%22usePresentedEvent%22:true%7D" data-tracking-uuid="df59e582-1763-44c7-a06d-fd1b0f8901bd" >
-                            <a href="/watch/81518991?tctx=1%2C5%2C%2C%2C%2C%2C%2C%2C%2CVideo%3A81518991" role="link" aria-label="Woo, una abogada extraordinaria" tabIndex="0" aria-hidden="false" className={Styles.slider__refocus}>
-                              <div className={Styles[".boxart-size-16x9 .boxart-container .boxart-rounded"]}>
-                                <img className={Styles[".boxart-image .boxart-image-in-padded-container"]} src="https://occ-0-7118-114.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWjCY7Eku_gTbq6BIdYlhlA50DO3RVLIBtGN3OkHZ3YYMVNPEu_pNlaJY4246ddK5JZ9gZrgUzE2sk_RMRpcIRmOY0wdv0odkG3Rxaeh1cSIzF8tGzhVsK9JOFq-zEi2mANH.jpg?r=72c" alt="" />
-                                <div className={Styles.fallback__text_container} aria-hidden="true" >
-                                  <p className={Styles.fallback__text}> Woo, una abogada extraordinaria</p>
-                                </div>
-                              </div>
-                              <div className={Styles.click__to_change_JAW_indicator}>
-                                <div className={Styles.bob__jawbone_chevron}>
-                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={Styles[".svg-icon .svg-icon-chevron-down"]}>
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M19.293 7.29297L12.0001 14.5859L4.70718 7.29297L3.29297 8.70718L11.293 16.7072C11.4805 16.8947 11.7349 17.0001 12.0001 17.0001C12.2653 17.0001 12.5196 16.8947 12.7072 16.7072L20.7072 8.70718L19.293 7.29297Z" fill="currentColor"></path>
-                                  </svg>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div className={Styles.bob__container}></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={Styles[".slider-item .slider-item-6"]}>
-                      <div className={Styles[".title-card-container .ltr-0"]}>
-                        <div id="title-card-1-6" className={Styles.title__card}>
-                          <div className={Styles.ptrack__content} data-ui-tracking-context="%7B%22list_id%22:%22NES_26EE61AB3B334526F9163902240FD2-7BA9C8DA77A6DF-8EA41745C6_p_1676548305838%22,%22location%22:%22homeScreen%22,%22rank%22:6,%22request_id%22:%224f56b4f2-029d-433f-8c0f-f484f72377dc-57915543%22,%22row%22:1,%22track_id%22:251935179,%22unifiedEntityId%22:%22Video:80021955%22,%22video_id%22:80021955,%22image_key%22:%22sdp%7C1a376ad0-a61b-11ec-ab4a-0efdaa2a67fb%7Ces%7CCRG%22,%22supp_video_id%22:1,%22lolomo_id%22:%22NES_26EE61AB3B334526F9163902240FD2_p_1676548305838%22,%22maturityMisMatchEdgy%22:false,%22maturityMisMatchNonEdgy%22:false,%22appView%22:%22boxArt%22,%22usePresentedEvent%22:true%7D" data-tracking-uuid="552ebbd5-3a3d-461b-91a7-0fb1f8b33290">
-                            <a href="/watch/80021955?tctx=1%2C6%2C%2C%2C%2C%2C%2C%2C%2CVideo%3A80021955" aria-label="Better Call Saul" tabIndex="-1" aria-hidden="true" className={Styles.slider__refocus}>
-                              <div className={Styles[".boxart-size-16x9 .boxart-container .boxart-rounded"]}>
-                                <img className={Styles[".boxart-image .boxart-image-in-padded-container"]} src="https://occ-0-7118-114.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZmfvo5lH9n20VHuvWdkgAf3tvUt68PYcc-a4zIAijUV_heikOz19OFDeF-nVIBW-jVEkIT5KA3dNJ5VxPb3B8tGdRum06tCaNscxIpHEC6ApANbuyuw7GbQyck1EhyNebq5.jpg?r=4f3" alt="" />
-                                <div className={Styles.fallback__text_container} aria-hidden="true" >
-                                  <p className={Styles.fallback__text}> Better Call Saul</p>
-                                </div>
-                              </div>
-                              <div className={Styles.click__to_change_JAW_indicator}>
-                                <div className={Styles.bob__jawbone_chevron}>
-                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={Styles[".svg-icon .svg-icon-chevron-down"]}>
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M19.293 7.29297L12.0001 14.5859L4.70718 7.29297L3.29297 8.70718L11.293 16.7072C11.4805 16.8947 11.7349 17.0001 12.0001 17.0001C12.2653 17.0001 12.5196 16.8947 12.7072 16.7072L20.7072 8.70718L19.293 7.29297Z" fill="currentColor"></path>
-                                  </svg>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div className={Styles.bob__container}></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={Styles[".slider-item .slider-item-"]}>
-                      <div className={Styles[".title-card-container .ltr-0"]}>
-                        <div id="title-card-1-7" className={Styles.title__card}>
-                          <div className={Styles.ptrack__content} data-ui-tracking-context="%7B%22list_id%22:%22NES_26EE61AB3B334526F9163902240FD2-7BA9C8DA77A6DF-8EA41745C6_p_1676548305838%22,%22location%22:%22homeScreen%22,%22rank%22:7,%22request_id%22:%224f56b4f2-029d-433f-8c0f-f484f72377dc-57915543%22,%22row%22:1,%22track_id%22:251935179,%22unifiedEntityId%22:%22Video:81149450%22,%22video_id%22:81149450,%22image_key%22:%22sdp%7C02a1f110-7d70-11ed-8045-127ef78ee19f%7Ces%7CCRG%22,%22supp_video_id%22:1,%22lolomo_id%22:%22NES_26EE61AB3B334526F9163902240FD2_p_1676548305838%22,%22maturityMisMatchEdgy%22:false,%22maturityMisMatchNonEdgy%22:false,%22appView%22:%22boxArt%22,%22usePresentedEvent%22:true%7D" data-tracking-uuid="4ba62983-0a9c-425c-8257-44917aa13b3f" >
-                            <a href="/watch/81149450?tctx=1%2C7%2C%2C%2C%2C%2C%2C%2C%2CVideo%3A81149450" aria-label="Vikingos: Valhalla" tabIndex="-1" aria-hidden="true" className={Styles.slider__refocus}>
-                              <div className={Styles[".boxart-size-16x9 .boxart-container .boxart-rounded"]}>
-                                <img className={Styles[".boxart-image .boxart-image-in-padded-container"]} src="https://occ-0-7118-114.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABf-6viDo-3LAPOLLbU7yasrAeHWvUh-Ol1PX7XjetbvpwfwZmbBg7PnSCk4ZzNAE-4jptGYd80pKDBX4G3QrQE9KTTw_EI7ngofMZ3SaRPPoI92nftOMO3quOZ9EXDie2Qdg.jpg?r=cc5" alt="" />
-                                <div className={Styles.fallback__text_container} aria-hidden="true" >
-                                  <p className={Styles.fallback__text}> Vikingos: Valhalla</p>
-                                </div>
-                              </div>
-                              <div className={Styles.click__to_change_JAW_indicator}>
-                                <div className={Styles.bob__jawbone_chevron}>
-                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={Styles[".svg-icon .svg-icon-chevron-down"]}>
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M19.293 7.29297L12.0001 14.5859L4.70718 7.29297L3.29297 8.70718L11.293 16.7072C11.4805 16.8947 11.7349 17.0001 12.0001 17.0001C12.2653 17.0001 12.5196 16.8947 12.7072 16.7072L20.7072 8.70718L19.293 7.29297Z" fill="currentColor"></path>
-                                  </svg>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div className={Styles.bob__container}></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={Styles[".slider-item .slider-item-"]} >
-                      <div className={Styles[".title-card-container .ltr-0"]}>
-                        <div id="title-card-1-8" className={Styles.title__card}>
-                          <div className={Styles.ptrack__content} data-ui-tracking-context="%7B%22list_id%22:%22NES_26EE61AB3B334526F9163902240FD2-7BA9C8DA77A6DF-8EA41745C6_p_1676548305838%22,%22location%22:%22homeScreen%22,%22rank%22:8,%22request_id%22:%224f56b4f2-029d-433f-8c0f-f484f72377dc-57915543%22,%22row%22:1,%22track_id%22:251935179,%22unifiedEntityId%22:%22Video:81083626%22,%22video_id%22:81083626,%22image_key%22:%22sdp%7C3edcf051-1659-11ec-81e5-1218123d2735%7Ces%22,%22supp_video_id%22:1,%22lolomo_id%22:%22NES_26EE61AB3B334526F9163902240FD2_p_1676548305838%22,%22maturityMisMatchEdgy%22:false,%22maturityMisMatchNonEdgy%22:false,%22appView%22:%22boxArt%22,%22usePresentedEvent%22:true%7D" data-tracking-uuid="62dd58aa-62c2-428d-a97b-6b6b4b09bcda" >
-                            <a href="/watch/81083626?tctx=1%2C8%2C%2C%2C%2C%2C%2C%2C%2CVideo%3A81083626" aria-label="Misa de medianoche" tabIndex="-1" aria-hidden="true" className={Styles.slider__refocus}>
-                              <div className={Styles[".boxart-size-16x9 .boxart-container .boxart-rounded"]}>
-                                <img className={Styles[".boxart-image .boxart-image-in-padded-container"]} src="https://occ-0-7118-114.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABX_QipXdMkmQ0f0t4bsh3ul1OO4woBenLtQT84PEG7JZ8gtgI9DSF5PHaSjiGLem3IhPhYudRKndDjMkwq9jtg2q9TTqLkkwNRl13JfDZ43zs72cVURZrTrGTmdK0r7ax0wn.jpg?r=e17" alt="" />
-                                <div className={Styles.fallback__text_container} aria-hidden="true" >
-                                  <p className={Styles.fallback__text}> Misa de medianoche</p>
-                                </div>
-                              </div>
-                              <div className={Styles.click__to_change_JAW_indicator}>
-                                <div className={Styles.bob__jawbone_chevron}>
-                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={Styles[".svg-icon .svg-icon-chevron-down"]}>
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M19.293 7.29297L12.0001 14.5859L4.70718 7.29297L3.29297 8.70718L11.293 16.7072C11.4805 16.8947 11.7349 17.0001 12.0001 17.0001C12.2653 17.0001 12.5196 16.8947 12.7072 16.7072L20.7072 8.70718L19.293 7.29297Z" fill="currentColor"></path>
-                                  </svg>
-                                </div>
-                              </div>
-                            </a>
-                          </div>
-                          <div className={Styles.bob__container}></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className={Styles[".slider-item .slider-item-"]} >
-                      <div className={Styles[".smallTitleCard .loadingTitle .fullWidth"]}>
-                        <div className={Styles[".ratio-16x9 .no-pulsate"]}></div>
-                      </div>
-                    </div>
-                    <div className={Styles[".slider-item .slider-item-"]} >
-                      <div className={Styles[".smallTitleCard .loadingTitle .fullWidth"]}>
-                        <div className={Styles[".ratio-16x9 .no-pulsate"]}></div>
-                      </div>
-                    </div>
-                    <div className={Styles[".slider-item .slider-item-"]} >
-                      <div className={Styles[".smallTitleCard .loadingTitle .fullWidth"]}>
-                        <div className={Styles[".ratio-16x9 .no-pulsate"]}></div>
-                      </div>
-                    </div>
-                    <div className={Styles[".slider-item .slider-item-"]} >
-                      <div className={Styles[".smallTitleCard .loadingTitle .fullWidth"]}>
-                        <div className={Styles[".ratio-16x9 .no-pulsate"]}></div>
+                      <div className="pc-genres-single">
+                        <div className="pc-genres-name">Comedy</div>
+                        <div className="pc-genre-divider"></div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <span className={Styles[".handle .handleNext active"]} tabIndex="0" role="button" aria-label="Ver más títulos" >
-                  <b className={Styles[".indicator-icon .icon-rightCaret"]}></b>
-                </span>
+                <img className="poster-img" src="https://image.tmdb.org/t/p/original//9PFonBhy4cQy7Jz20NpMygczOkv.jpg" alt="tvshow" />
               </div>
+              <div className="poster-container">
+                <div className="poster-card">
+                  <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//iiCY2QIGSnmtVkIdjkKAfwDs0KF.jpg" alt="tvshow" />
+                  <div className="poster-card-info">
+                    <div className="pc-icons">
+                      <div className="pc-icons-menu">
+                        <div className="pc-icon-play">
+                          <img className="pc-icon-play-img" alt="play" src="/assets/iconPlay-573ce638.png" />
+                        </div>
+                        <div className="pc-icon-default">
+                          <img className="pc-icon-default-img white" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAmVJREFUeJzt3D1uFFEQReG7BNgMCHYBJsKwDpIJbugNAYFTr4ffDAfwSrYlZGz3GLu7evqeTyppNNHTe0eaiUoCAAAAAAAAAAAAAAAAAOCgvRzzeczPMT8uP79oPREW82bM+Zjf16a+e914Lizg6Zhv+vfxr+bLmCdtp8Ps3uv2x7+a47bTYXY7TQewazsdZmdNB+Cms2EBFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswhgEbWNqxYyfVjZnGo6gNMVnPP6vLu804NQe/juWsXG/N98HXN0j3doURs4b1rCyDzO/BrzfO/XaFArV7svaevzce/XaFB7d7svaOvzfe/XaEAA4QHwEzD/rPonoFau1x+V7kva6qz+T2Cpleu1dbv7srY2daev7vEOrWrlem3d9piTFc2Zpi/6bAXn/HvqDt+KNfaPwpoOwE1nwwIsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUC0naYD2LWdDrOrrdtTARy3nQ6zq5XrtXX7tsevVWxs49q4Wrl+0zLL+u5g9vDhYWrb5idd7DauqfWrz1pPBAAAAAAAAAAAAAAAAADAw/wB6orZ+acWFhQAAAAASUVORK5CYII=" />
+                        </div>
+                        <div className="pc-icon-default pc-thumb" />
+                        <img className="pc-icon-default-img" alt="add" src="/assets/iconThumbUp-ad099873.png" />
+                      </div>
+                    </div>
+                    <div className="pc-icon-default pc-arrow">
+                      <img className="pc-icon-default-img" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAJcEhZcwAACxMAAAsTAQCanBgAAAXRaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDEtMjFUMjE6MDk6MjItMDM6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozZWNhYjBkNC1kYjZlLWVjNGItODA4My0wYmU5ZWU0NjA2OTUiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxNzFiMjBhYy1lZDhlLWJiNDgtOWUyZi1hNDUwYjAwZWQ3MjciPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjE3MWIyMGFjLWVkOGUtYmI0OC05ZTJmLWE0NTBiMDBlZDcyNyIgc3RFdnQ6d2hlbj0iMjAyMy0wMS0yMVQyMTowOToyMi0wMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHN0RXZ0OndoZW49IjIwMjMtMDEtMjFUMjE6MjQ6MDYtMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1w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" />
+                    </div>
+                  </div>
+                  <div className="pc-seasons">
+                    <div className="pc-seasons-match">99% Match </div>
+                    <div className="pc-seasons-clasif">13 +</div>
+                    <div className="pc-seasons-episodes">26 Seasons</div>
+                    <div className="pc-seasons-quality">HD</div>
+                  </div>
+                  <div className="pc-genres">
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Animation</div>
+                      <div className="pc-genre-divider"></div>
+                    </div><div className="pc-genres-single">
+                      <div className="pc-genres-name">Comedy</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//iiCY2QIGSnmtVkIdjkKAfwDs0KF.jpg" alt="tvshow" />
             </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//cvhNj9eoRBe5SxjCbQTkh05UP5K.jpg" alt="tvshow" />
+                <div className="poster-card-info">
+                  <div className="pc-icons">
+                    <div className="pc-icons-menu">
+                      <div className="pc-icon-play">
+                        <img className="pc-icon-play-img" alt="play" src="/assets/iconPlay-573ce638.png" />
+                      </div>
+                      <div className="pc-icon-default">
+                        <img className="pc-icon-default-img white" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAmVJREFUeJzt3D1uFFEQReG7BNgMCHYBJsKwDpIJbugNAYFTr4ffDAfwSrYlZGz3GLu7evqeTyppNNHTe0eaiUoCAAAAAAAAAAAAAAAAAOCgvRzzeczPMT8uP79oPREW82bM+Zjf16a+e914Lizg6Zhv+vfxr+bLmCdtp8Ps3uv2x7+a47bTYXY7TQewazsdZmdNB+Cms2EBFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswhgEbWNqxYyfVjZnGo6gNMVnPP6vLu804NQe/juWsXG/N98HXN0j3doURs4b1rCyDzO/BrzfO/XaFArV7svaevzce/XaFB7d7svaOvzfe/XaEAA4QHwEzD/rPonoFau1x+V7kva6qz+T2Cpleu1dbv7srY2daev7vEOrWrlem3d9piTFc2Zpi/6bAXn/HvqDt+KNfaPwpoOwE1nwwIsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUC0naYD2LWdDrOrrdtTARy3nQ6zq5XrtXX7tsevVWxs49q4Wrl+0zLL+u5g9vDhYWrb5idd7DauqfWrz1pPBAAAAAAAAAAAAAAAAADAw/wB6orZ+acWFhQAAAAASUVORK5CYII=" />
+                      </div>
+                      <div className="pc-icon-default pc-thumb">
+                        <img className="pc-icon-default-img" alt="add" src="/assets/iconThumbUp-ad099873.png" />
+                      </div>
+                    </div>
+                    <div className="pc-icon-default pc-arrow">
+                      <img className="pc-icon-default-img" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAJcEhZcwAACxMAAAsTAQCanBgAAAXRaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDEtMjFUMjE6MDk6MjItMDM6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozZWNhYjBkNC1kYjZlLWVjNGItODA4My0wYmU5ZWU0NjA2OTUiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxNzFiMjBhYy1lZDhlLWJiNDgtOWUyZi1hNDUwYjAwZWQ3MjciPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjE3MWIyMGFjLWVkOGUtYmI0OC05ZTJmLWE0NTBiMDBlZDcyNyIgc3RFdnQ6d2hlbj0iMjAyMy0wMS0yMVQyMTowOToyMi0wMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHN0RXZ0OndoZW49IjIwMjMtMDEtMjFUMjE6MjQ6MDYtMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1w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" />
+                    </div>
+                  </div>
+                  <div className="pc-seasons">
+                    <div className="pc-seasons-match">99% Match </div>
+                    <div className="pc-seasons-clasif">13 +</div>
+                    <div className="pc-seasons-episodes">6 Seasons</div>
+                    <div className="pc-seasons-quality">HD</div>
+                  </div>
+                  <div className="pc-genres">
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Animation</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Comedy</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Sci-Fi &amp; Fantasy</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//cvhNj9eoRBe5SxjCbQTkh05UP5K.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//zI3E2a3WYma5w8emI35mgq5Iurx.jpg" alt="tvshow" />
+                <div className="poster-card-info">
+                  <div className="pc-icons">
+                    <div className="pc-icons-menu">
+                      <div className="pc-icon-play">
+                        <img className="pc-icon-play-img" alt="play" src="/assets/iconPlay-573ce638.png" />
+                      </div>
+                      <div className="pc-icon-default">
+                        <img className="pc-icon-default-img white" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAmVJREFUeJzt3D1uFFEQReG7BNgMCHYBJsKwDpIJbugNAYFTr4ffDAfwSrYlZGz3GLu7evqeTyppNNHTe0eaiUoCAAAAAAAAAAAAAAAAAOCgvRzzeczPMT8uP79oPREW82bM+Zjf16a+e914Lizg6Zhv+vfxr+bLmCdtp8Ps3uv2x7+a47bTYXY7TQewazsdZmdNB+Cms2EBFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswhgEbWNqxYyfVjZnGo6gNMVnPP6vLu804NQe/juWsXG/N98HXN0j3doURs4b1rCyDzO/BrzfO/XaFArV7svaevzce/XaFB7d7svaOvzfe/XaEAA4QHwEzD/rPonoFau1x+V7kva6qz+T2Cpleu1dbv7srY2daev7vEOrWrlem3d9piTFc2Zpi/6bAXn/HvqDt+KNfaPwpoOwE1nwwIsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUC0naYD2LWdDrOrrdtTARy3nQ6zq5XrtXX7tsevVWxs49q4Wrl+0zLL+u5g9vDhYWrb5idd7DauqfWrz1pPBAAAAAAAAAAAAAAAAADAw/wB6orZ+acWFhQAAAAASUVORK5CYII=" />
+                      </div>
+                      <div className="pc-icon-default pc-thumb">
+                        <img className="pc-icon-default-img" alt="add" src="/assets/iconThumbUp-ad099873.png" />
+                      </div>
+                    </div>
+                    <div className="pc-icon-default pc-arrow">
+                      <img className="pc-icon-default-img" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAJcEhZcwAACxMAAAsTAQCanBgAAAXRaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDEtMjFUMjE6MDk6MjItMDM6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozZWNhYjBkNC1kYjZlLWVjNGItODA4My0wYmU5ZWU0NjA2OTUiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxNzFiMjBhYy1lZDhlLWJiNDgtOWUyZi1hNDUwYjAwZWQ3MjciPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjE3MWIyMGFjLWVkOGUtYmI0OC05ZTJmLWE0NTBiMDBlZDcyNyIgc3RFdnQ6d2hlbj0iMjAyMy0wMS0yMVQyMTowOToyMi0wMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHN0RXZ0OndoZW49IjIwMjMtMDEtMjFUMjE6MjQ6MDYtMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1w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" />
+                    </div>
+                  </div>
+                  <div className="pc-seasons">
+                    <div className="pc-seasons-match">99% Match </div>
+                    <div className="pc-seasons-clasif">13 +</div>
+                    <div className="pc-seasons-episodes">34 Seasons</div>
+                    <div className="pc-seasons-quality">HD</div>
+                  </div>
+                  <div className="pc-genres">
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Family</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Animation</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Comedy</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//zI3E2a3WYma5w8emI35mgq5Iurx.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//nz5fAg1OomLZ7fxiM4RnLbJxppc.jpg" alt="tvshow" />
+                <div className="poster-card-info">
+                  <div className="pc-icons">
+                    <div className="pc-icons-menu">
+                      <div className="pc-icon-play">
+                        <img className="pc-icon-play-img" alt="play" src="/assets/iconPlay-573ce638.png" />
+                      </div>
+                      <div className="pc-icon-default">
+                        <img className="pc-icon-default-img white" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAmVJREFUeJzt3D1uFFEQReG7BNgMCHYBJsKwDpIJbugNAYFTr4ffDAfwSrYlZGz3GLu7evqeTyppNNHTe0eaiUoCAAAAAAAAAAAAAAAAAOCgvRzzeczPMT8uP79oPREW82bM+Zjf16a+e914Lizg6Zhv+vfxr+bLmCdtp8Ps3uv2x7+a47bTYXY7TQewazsdZmdNB+Cms2EBFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswhgEbWNqxYyfVjZnGo6gNMVnPP6vLu804NQe/juWsXG/N98HXN0j3doURs4b1rCyDzO/BrzfO/XaFArV7svaevzce/XaFB7d7svaOvzfe/XaEAA4QHwEzD/rPonoFau1x+V7kva6qz+T2Cpleu1dbv7srY2daev7vEOrWrlem3d9piTFc2Zpi/6bAXn/HvqDt+KNfaPwpoOwE1nwwIsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUC0naYD2LWdDrOrrdtTARy3nQ6zq5XrtXX7tsevVWxs49q4Wrl+0zLL+u5g9vDhYWrb5idd7DauqfWrz1pPBAAAAAAAAAAAAAAAAADAw/wB6orZ+acWFhQAAAAASUVORK5CYII=" />
+                      </div>
+                      <div className="pc-icon-default pc-thumb">
+                        <img className="pc-icon-default-img" alt="add" src="/assets/iconThumbUp-ad099873.png" />
+                      </div>
+                    </div>
+                    <div className="pc-icon-default pc-arrow">
+                      <img className="pc-icon-default-img" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAJcEhZcwAACxMAAAsTAQCanBgAAAXRaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDEtMjFUMjE6MDk6MjItMDM6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozZWNhYjBkNC1kYjZlLWVjNGItODA4My0wYmU5ZWU0NjA2OTUiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxNzFiMjBhYy1lZDhlLWJiNDgtOWUyZi1hNDUwYjAwZWQ3MjciPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjE3MWIyMGFjLWVkOGUtYmI0OC05ZTJmLWE0NTBiMDBlZDcyNyIgc3RFdnQ6d2hlbj0iMjAyMy0wMS0yMVQyMTowOToyMi0wMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHN0RXZ0OndoZW49IjIwMjMtMDEtMjFUMjE6MjQ6MDYtMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1w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" />
+                    </div>
+                  </div>
+                  <div className="pc-seasons">
+                    <div className="pc-seasons-match">99% Match </div>
+                    <div className="pc-seasons-clasif">13 +</div>
+                    <div className="pc-seasons-episodes">28 Seasons</div>
+                    <div className="pc-seasons-quality">HD</div>
+                  </div>
+                  <div className="pc-genres">
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">News</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Comedy</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//nz5fAg1OomLZ7fxiM4RnLbJxppc.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//5Gf83qYgLY8Qivn7jpv5nxxZPu6.jpg" alt="tvshow" />
+                <div className="poster-card-info">
+                  <div className="pc-icons">
+                    <div className="pc-icons-menu">
+                      <div className="pc-icon-play">
+                        <img className="pc-icon-play-img" alt="play" src="/assets/iconPlay-573ce638.png" />
+                      </div>
+                      <div className="pc-icon-default">
+                        <img className="pc-icon-default-img white" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAmVJREFUeJzt3D1uFFEQReG7BNgMCHYBJsKwDpIJbugNAYFTr4ffDAfwSrYlZGz3GLu7evqeTyppNNHTe0eaiUoCAAAAAAAAAAAAAAAAAOCgvRzzeczPMT8uP79oPREW82bM+Zjf16a+e914Lizg6Zhv+vfxr+bLmCdtp8Ps3uv2x7+a47bTYXY7TQewazsdZmdNB+Cms2EBFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswhgEbWNqxYyfVjZnGo6gNMVnPP6vLu804NQe/juWsXG/N98HXN0j3doURs4b1rCyDzO/BrzfO/XaFArV7svaevzce/XaFB7d7svaOvzfe/XaEAA4QHwEzD/rPonoFau1x+V7kva6qz+T2Cpleu1dbv7srY2daev7vEOrWrlem3d9piTFc2Zpi/6bAXn/HvqDt+KNfaPwpoOwE1nwwIsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUC0naYD2LWdDrOrrdtTARy3nQ6zq5XrtXX7tsevVWxs49q4Wrl+0zLL+u5g9vDhYWrb5idd7DauqfWrz1pPBAAAAAAAAAAAAAAAAADAw/wB6orZ+acWFhQAAAAASUVORK5CYII=" />
+                      </div>
+                      <div className="pc-icon-default pc-thumb">
+                        <img className="pc-icon-default-img" alt="add" src="/assets/iconThumbUp-ad099873.png" />
+                      </div>
+                    </div>
+                    <div className="pc-icon-default pc-arrow">
+                      <img className="pc-icon-default-img" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAJcEhZcwAACxMAAAsTAQCanBgAAAXRaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDEtMjFUMjE6MDk6MjItMDM6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozZWNhYjBkNC1kYjZlLWVjNGItODA4My0wYmU5ZWU0NjA2OTUiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxNzFiMjBhYy1lZDhlLWJiNDgtOWUyZi1hNDUwYjAwZWQ3MjciPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjE3MWIyMGFjLWVkOGUtYmI0OC05ZTJmLWE0NTBiMDBlZDcyNyIgc3RFdnQ6d2hlbj0iMjAyMy0wMS0yMVQyMTowOToyMi0wMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHN0RXZ0OndoZW49IjIwMjMtMDEtMjFUMjE6MjQ6MDYtMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1w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" />
+                    </div>
+                  </div>
+                  <div className="pc-seasons">
+                    <div className="pc-seasons-match">99% Match </div>
+                    <div className="pc-seasons-clasif">13 +</div>
+                    <div className="pc-seasons-episodes">6 Seasons</div>
+                    <div className="pc-seasons-quality">HD</div>
+                  </div>
+                  <div className="pc-genres">
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Comedy</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//5Gf83qYgLY8Qivn7jpv5nxxZPu6.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//aLB7psB9N81n5GecHNOudXWW3AI.jpg" alt="tvshow" />
+                <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//aLB7psB9N81n5GecHNOudXWW3AI.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//dSS7XoqmNxMebyVbEGBY0HWrReA.jpg" alt="tvshow" />
+                <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//dSS7XoqmNxMebyVbEGBY0HWrReA.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//f496cm9enuEsZkSPzCwnTESEK5s.jpg" alt="tvshow" />
+                <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//f496cm9enuEsZkSPzCwnTESEK5s.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card"><img className="poster-card-img" src="https://image.tmdb.org/t/p/original//A9QDK4OWpv41W27kCv0LXe30k9S.jpg" alt="tvshow" />
+                <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//A9QDK4OWpv41W27kCv0LXe30k9S.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//9akij7PqZ1g6zl42DQQTtL9CTSb.jpg" alt="tvshow" />
+                <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//9akij7PqZ1g6zl42DQQTtL9CTSb.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//j1yqOSVVskSYpYreNT0VeD1S3Dq.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//j1yqOSVVskSYpYreNT0VeD1S3Dq.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//ckLLIsNy3Z0Go1PYHA2PHzVymUA.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//ckLLIsNy3Z0Go1PYHA2PHzVymUA.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//kZZl47H5zlM8z1Rqe39h46NC17K.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//kZZl47H5zlM8z1Rqe39h46NC17K.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//zqjSex7DZn7p4dU7mMktdJ8zQV5.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//zqjSex7DZn7p4dU7mMktdJ8zQV5.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//m7tG5E1EbywuwTsl6hq990So0Bx.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//m7tG5E1EbywuwTsl6hq990So0Bx.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//2rYqJg1OzaDlc5kiBK4IdgrELMf.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//2rYqJg1OzaDlc5kiBK4IdgrELMf.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//nZcufEuqZqNYMx6mNjlh2rmjDqx.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//nZcufEuqZqNYMx6mNjlh2rmjDqx.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//mS5SLxMYcKfUxA0utBSR5MOAWWr.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//mS5SLxMYcKfUxA0utBSR5MOAWWr.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//b2XLAyJKLnZWClMmzNieoa33Sf6.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//b2XLAyJKLnZWClMmzNieoa33Sf6.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//zxkNhuPSHeDv3yA7sFu2RuEOGgR.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//zxkNhuPSHeDv3yA7sFu2RuEOGgR.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//fu5vEUHgxkAPmX26ISQXqHmlPMq.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//fu5vEUHgxkAPmX26ISQXqHmlPMq.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//VYnnyA2hyxi3VUPgCA71mMtt69.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//VYnnyA2hyxi3VUPgCA71mMtt69.jpg" alt="tvshow" />
+            </div>
+          </div>
+          <div className="handle handle-right">
+            <div className="handle-symbol">›</div>
+          </div>
+        </div>
+      </div>
+      {/* <div className="category">
+        <h3 className="category-title">Dramas</h3>
+        <div className="container">
+          <div className="handle handle-left">
+            <div className="handle-symbol">‹</div>
+          </div>
+          <div className="slider">
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" alt="tvshow" />
+                <div className="poster-card-info">
+                  <div className="pc-icons">
+                    <div className="pc-icons-menu">
+                      <div className="pc-icon-play">
+                        <img className="pc-icon-play-img" alt="play" src="/assets/iconPlay-573ce638.png" />
+                      </div>
+                      <div className="pc-icon-default">
+                        <img className="pc-icon-default-img white" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAmVJREFUeJzt3D1uFFEQReG7BNgMCHYBJsKwDpIJbugNAYFTr4ffDAfwSrYlZGz3GLu7evqeTyppNNHTe0eaiUoCAAAAAAAAAAAAAAAAAOCgvRzzeczPMT8uP79oPREW82bM+Zjf16a+e914Lizg6Zhv+vfxr+bLmCdtp8Ps3uv2x7+a47bTYXY7TQewazsdZmdNB+Cms2EBFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswhgEbWNqxYyfVjZnGo6gNMVnPP6vLu804NQe/juWsXG/N98HXN0j3doURs4b1rCyDzO/BrzfO/XaFArV7svaevzce/XaFB7d7svaOvzfe/XaEAA4QHwEzD/rPonoFau1x+V7kva6qz+T2Cpleu1dbv7srY2daev7vEOrWrlem3d9piTFc2Zpi/6bAXn/HvqDt+KNfaPwpoOwE1nwwIsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUC0naYD2LWdDrOrrdtTARy3nQ6zq5XrtXX7tsevVWxs49q4Wrl+0zLL+u5g9vDhYWrb5idd7DauqfWrz1pPBAAAAAAAAAAAAAAAAADAw/wB6orZ+acWFhQAAAAASUVORK5CYII=" />
+                      </div>
+                      <div className="pc-icon-default pc-thumb">
+                        <img className="pc-icon-default-img" alt="add" src="/assets/iconThumbUp-ad099873.png" />
+                      </div>
+                    </div>
+                    <div className="pc-icon-default pc-arrow">
+                      <img className="pc-icon-default-img" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAJcEhZcwAACxMAAAsTAQCanBgAAAXRaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDEtMjFUMjE6MDk6MjItMDM6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozZWNhYjBkNC1kYjZlLWVjNGItODA4My0wYmU5ZWU0NjA2OTUiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxNzFiMjBhYy1lZDhlLWJiNDgtOWUyZi1hNDUwYjAwZWQ3MjciPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjE3MWIyMGFjLWVkOGUtYmI0OC05ZTJmLWE0NTBiMDBlZDcyNyIgc3RFdnQ6d2hlbj0iMjAyMy0wMS0yMVQyMTowOToyMi0wMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHN0RXZ0OndoZW49IjIwMjMtMDEtMjFUMjE6MjQ6MDYtMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1w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" />
+                    </div>
+                  </div>
+                  <div className="pc-seasons">
+                    <div className="pc-seasons-match">99% Match </div>
+                    <div className="pc-seasons-clasif">13 +</div>
+                    <div className="pc-seasons-episodes">1 Season</div>
+                    <div className="pc-seasons-quality">HD</div>
+                  </div>
+                  <div className="pc-genres">
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Drama</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Action &amp; Adventure</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//fwTv3RPRAIy0maOMns5eYRRwnDk.jpg" alt="tvshow" />
+                <div className="poster-card-info">
+                  <div className="pc-icons">
+                    <div className="pc-icons-menu">
+                      <div className="pc-icon-play">
+                        <img className="pc-icon-play-img" alt="play" src="/assets/iconPlay-573ce638.png" />
+                      </div>
+                      <div className="pc-icon-default">
+                        <img className="pc-icon-default-img white" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAmVJREFUeJzt3D1uFFEQReG7BNgMCHYBJsKwDpIJbugNAYFTr4ffDAfwSrYlZGz3GLu7evqeTyppNNHTe0eaiUoCAAAAAAAAAAAAAAAAAOCgvRzzeczPMT8uP79oPREW82bM+Zjf16a+e914Lizg6Zhv+vfxr+bLmCdtp8Ps3uv2x7+a47bTYXY7TQewazsdZmdNB+Cms2EBFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswhgEbWNqxYyfVjZnGo6gNMVnPP6vLu804NQe/juWsXG/N98HXN0j3doURs4b1rCyDzO/BrzfO/XaFArV7svaevzce/XaFB7d7svaOvzfe/XaEAA4QHwEzD/rPonoFau1x+V7kva6qz+T2Cpleu1dbv7srY2daev7vEOrWrlem3d9piTFc2Zpi/6bAXn/HvqDt+KNfaPwpoOwE1nwwIsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUC0naYD2LWdDrOrrdtTARy3nQ6zq5XrtXX7tsevVWxs49q4Wrl+0zLL+u5g9vDhYWrb5idd7DauqfWrz1pPBAAAAAAAAAAAAAAAAADAw/wB6orZ+acWFhQAAAAASUVORK5CYII=" />
+                      </div>
+                      <div className="pc-icon-default pc-thumb">
+                        <img className="pc-icon-default-img" alt="add" src="/assets/iconThumbUp-ad099873.png" /></div>
+                    </div>
+                    <div className="pc-icon-default pc-arrow">
+                      <img className="pc-icon-default-img" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAJcEhZcwAACxMAAAsTAQCanBgAAAXRaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDEtMjFUMjE6MDk6MjItMDM6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozZWNhYjBkNC1kYjZlLWVjNGItODA4My0wYmU5ZWU0NjA2OTUiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxNzFiMjBhYy1lZDhlLWJiNDgtOWUyZi1hNDUwYjAwZWQ3MjciPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjE3MWIyMGFjLWVkOGUtYmI0OC05ZTJmLWE0NTBiMDBlZDcyNyIgc3RFdnQ6d2hlbj0iMjAyMy0wMS0yMVQyMTowOToyMi0wMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHN0RXZ0OndoZW49IjIwMjMtMDEtMjFUMjE6MjQ6MDYtMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1w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" />
+                    </div>
+                  </div>
+                  <div className="pc-seasons">
+                    <div className="pc-seasons-match">99% Match </div>
+                    <div className="pc-seasons-clasif">13 +</div>
+                    <div className="pc-seasons-episodes">1 Season</div>
+                    <div className="pc-seasons-quality">HD</div>
+                  </div>
+                  <div className="pc-genres">
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Crime</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Drama</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//fwTv3RPRAIy0maOMns5eYRRwnDk.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//rg8N7x27Ef6PvlIiioLStf9ZaIO.jpg" alt="tvshow" />
+                <div className="poster-card-info">
+                  <div className="pc-icons">
+                    <div className="pc-icons-menu">
+                      <div className="pc-icon-play">
+                        <img className="pc-icon-play-img" alt="play" src="/assets/iconPlay-573ce638.png" />
+                      </div>
+                      <div className="pc-icon-default">
+                        <img className="pc-icon-default-img white" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAmVJREFUeJzt3D1uFFEQReG7BNgMCHYBJsKwDpIJbugNAYFTr4ffDAfwSrYlZGz3GLu7evqeTyppNNHTe0eaiUoCAAAAAAAAAAAAAAAAAOCgvRzzeczPMT8uP79oPREW82bM+Zjf16a+e914Lizg6Zhv+vfxr+bLmCdtp8Ps3uv2x7+a47bTYXY7TQewazsdZmdNB+Cms2EBFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswhgEbWNqxYyfVjZnGo6gNMVnPP6vLu804NQe/juWsXG/N98HXN0j3doURs4b1rCyDzO/BrzfO/XaFArV7svaevzce/XaFB7d7svaOvzfe/XaEAA4QHwEzD/rPonoFau1x+V7kva6qz+T2Cpleu1dbv7srY2daev7vEOrWrlem3d9piTFc2Zpi/6bAXn/HvqDt+KNfaPwpoOwE1nwwIsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUC0naYD2LWdDrOrrdtTARy3nQ6zq5XrtXX7tsevVWxs49q4Wrl+0zLL+u5g9vDhYWrb5idd7DauqfWrz1pPBAAAAAAAAAAAAAAAAADAw/wB6orZ+acWFhQAAAAASUVORK5CYII=" />
+                      </div>
+                      <div className="pc-icon-default pc-thumb">
+                        <img className="pc-icon-default-img" alt="add" src="/assets/iconThumbUp-ad099873.png" />
+                      </div>
+                    </div>
+                    <div className="pc-icon-default pc-arrow">
+                      <img className="pc-icon-default-img" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAJcEhZcwAACxMAAAsTAQCanBgAAAXRaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDEtMjFUMjE6MDk6MjItMDM6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozZWNhYjBkNC1kYjZlLWVjNGItODA4My0wYmU5ZWU0NjA2OTUiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxNzFiMjBhYy1lZDhlLWJiNDgtOWUyZi1hNDUwYjAwZWQ3MjciPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjE3MWIyMGFjLWVkOGUtYmI0OC05ZTJmLWE0NTBiMDBlZDcyNyIgc3RFdnQ6d2hlbj0iMjAyMy0wMS0yMVQyMTowOToyMi0wMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHN0RXZ0OndoZW49IjIwMjMtMDEtMjFUMjE6MjQ6MDYtMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1w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" />
+                    </div>
+                  </div>
+                  <div className="pc-seasons">
+                    <div className="pc-seasons-match">99% Match </div>
+                    <div className="pc-seasons-clasif">13 +</div>
+                    <div className="pc-seasons-episodes">9 Seasons</div>
+                    <div className="pc-seasons-quality">HD</div>
+                  </div>
+                  <div className="pc-genres">
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Drama</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Sci-Fi &amp; Fantasy</div>
+                      <div className="pc-genre-divider"></div>
+                    </div></div>
+                </div>
+              </div>
+              <img c
+                lass="poster-img" src="https://image.tmdb.org/t/p/original//rg8N7x27Ef6PvlIiioLStf9ZaIO.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//daSFbrt8QCXV2hSwB0hqYjbj681.jpg" alt="tvshow" />
+                <div className="poster-card-info">
+                  <div className="pc-icons">
+                    <div className="pc-icons-menu">
+                      <div className="pc-icon-play">
+                        <img className="pc-icon-play-img" alt="play" src="/assets/iconPlay-573ce638.png" />
+                      </div>
+                      <div className="pc-icon-default">
+                        <img className="pc-icon-default-img white" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAmVJREFUeJzt3D1uFFEQReG7BNgMCHYBJsKwDpIJbugNAYFTr4ffDAfwSrYlZGz3GLu7evqeTyppNNHTe0eaiUoCAAAAAAAAAAAAAAAAAOCgvRzzeczPMT8uP79oPREW82bM+Zjf16a+e914Lizg6Zhv+vfxr+bLmCdtp8Ps3uv2x7+a47bTYXY7TQewazsdZmdNB+Cms2EBFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswhgEbWNqxYyfVjZnGo6gNMVnPP6vLu804NQe/juWsXG/N98HXN0j3doURs4b1rCyDzO/BrzfO/XaFArV7svaevzce/XaFB7d7svaOvzfe/XaEAA4QHwEzD/rPonoFau1x+V7kva6qz+T2Cpleu1dbv7srY2daev7vEOrWrlem3d9piTFc2Zpi/6bAXn/HvqDt+KNfaPwpoOwE1nwwIsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUC0naYD2LWdDrOrrdtTARy3nQ6zq5XrtXX7tsevVWxs49q4Wrl+0zLL+u5g9vDhYWrb5idd7DauqfWrz1pPBAAAAAAAAAAAAAAAAADAw/wB6orZ+acWFhQAAAAASUVORK5CYII=" />
+                      </div>
+                      <div className="pc-icon-default pc-thumb">
+                        <img className="pc-icon-default-img" alt="add" src="/assets/iconThumbUp-ad099873.png" />
+                      </div>
+                    </div>
+                    <div className="pc-icon-default pc-arrow">
+                      <img className="pc-icon-default-img" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAJcEhZcwAACxMAAAsTAQCanBgAAAXRaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDEtMjFUMjE6MDk6MjItMDM6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozZWNhYjBkNC1kYjZlLWVjNGItODA4My0wYmU5ZWU0NjA2OTUiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxNzFiMjBhYy1lZDhlLWJiNDgtOWUyZi1hNDUwYjAwZWQ3MjciPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjE3MWIyMGFjLWVkOGUtYmI0OC05ZTJmLWE0NTBiMDBlZDcyNyIgc3RFdnQ6d2hlbj0iMjAyMy0wMS0yMVQyMTowOToyMi0wMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHN0RXZ0OndoZW49IjIwMjMtMDEtMjFUMjE6MjQ6MDYtMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1w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" />
+                    </div>
+                  </div>
+                  <div className="pc-seasons">
+                    <div className="pc-seasons-match">99% Match </div>
+                    <div className="pc-seasons-clasif">13 +</div>
+                    <div className="pc-seasons-episodes">19 Seasons</div>
+                    <div className="pc-seasons-quality">HD</div>
+                  </div>
+                  <div className="pc-genres">
+                    <div className="pc-genres-single"><div className="pc-genres-name">Drama</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//daSFbrt8QCXV2hSwB0hqYjbj681.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//7bEYwjUvlJW7GerM8GYmqwl4oS3.jpg" alt="tvshow" />
+                <div className="poster-card-info">
+                  <div className="pc-icons">
+                    <div className="pc-icons-menu">
+                      <div className="pc-icon-play">
+                        <img className="pc-icon-play-img" alt="play" src="/assets/iconPlay-573ce638.png" />
+                      </div>
+                      <div className="pc-icon-default">
+                        <img className="pc-icon-default-img white" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAmVJREFUeJzt3D1uFFEQReG7BNgMCHYBJsKwDpIJbugNAYFTr4ffDAfwSrYlZGz3GLu7evqeTyppNNHTe0eaiUoCAAAAAAAAAAAAAAAAAOCgvRzzeczPMT8uP79oPREW82bM+Zjf16a+e914Lizg6Zhv+vfxr+bLmCdtp8Ps3uv2x7+a47bTYXY7TQewazsdZmdNB+Cms2EBFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswhgEbWNqxYyfVjZnGo6gNMVnPP6vLu804NQe/juWsXG/N98HXN0j3doURs4b1rCyDzO/BrzfO/XaFArV7svaevzce/XaFB7d7svaOvzfe/XaEAA4QHwEzD/rPonoFau1x+V7kva6qz+T2Cpleu1dbv7srY2daev7vEOrWrlem3d9piTFc2Zpi/6bAXn/HvqDt+KNfaPwpoOwE1nwwIsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUC0naYD2LWdDrOrrdtTARy3nQ6zq5XrtXX7tsevVWxs49q4Wrl+0zLL+u5g9vDhYWrb5idd7DauqfWrz1pPBAAAAAAAAAAAAAAAAADAw/wB6orZ+acWFhQAAAAASUVORK5CYII=" />
+                      </div>
+                      <div className="pc-icon-default pc-thumb">
+                        <img className="pc-icon-default-img" alt="add" src="/assets/iconThumbUp-ad099873.png" />
+                      </div>
+                    </div>
+                    <div className="pc-icon-default pc-arrow">
+                      <img className="pc-icon-default-img" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAJcEhZcwAACxMAAAsTAQCanBgAAAXRaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDEtMjFUMjE6MDk6MjItMDM6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozZWNhYjBkNC1kYjZlLWVjNGItODA4My0wYmU5ZWU0NjA2OTUiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxNzFiMjBhYy1lZDhlLWJiNDgtOWUyZi1hNDUwYjAwZWQ3MjciPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjE3MWIyMGFjLWVkOGUtYmI0OC05ZTJmLWE0NTBiMDBlZDcyNyIgc3RFdnQ6d2hlbj0iMjAyMy0wMS0yMVQyMTowOToyMi0wMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHN0RXZ0OndoZW49IjIwMjMtMDEtMjFUMjE6MjQ6MDYtMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7B873jAAAG3UlEQVR4nO2dS2idRRTHfzdpm0YQF/UB4gPfriq6cuXGhW5E0vpA3Ku1a8GmFpQ2trZdCPYB4lpsa9oEFBRXrn2sFN8VF6Jo1UrTBFvpdXHucL/Gm29mvtzvZmbO+UG4IZnFwPznvObM3E6328XQy9haT8BYW0wAyjEBKMcEoBwTgHJMAMoxASjHBKAcE4ByTADKMQEoxwSgHBOActat9QRq6AAPA1PAdcAnwBzwxRrOqThSFsBNwKO9n03AzcAS8CtwZg3nVRSpCuBGYC/wBDDe+9s9wK3A9b3/mQiGQKoxwEPIzh9f9vcrgW3ATuCaUU+qRFIVwA3AxAr/mwS2IyK4dmQzKpRUBbAA1PWqrQeeA3YAV49kRoWSqgA+Bj71jJkAnsUswapIVQCfAa8AX3rGTSIxwTQmgkakKoBLwAfI7v7KM3YCeB5xBxYYRpKqABzzyO7+2jNuPeIOprGYIIpU6wBV5pGq4KvA3TXjJpHAEKRO8FvL8yqCTkYXQ6bwiwDgInC4N/b3tieVO6m7gCqnkJjgW884SxEjyEkAIIdBO4FvPOM2YiliEDm5gCpbET9/h2fcReAI4g4sJhhAbhbAMYtE/N95xq1H6gTmDlYghyxgJU7Szw5urxm3AXEHYIHh/8jVBTg6wGPADH538A9wFEsRLyNXF+DoAieQYO97z1irGA4gdwE4TgAvAT94xjl3YP0EPUoRAPRFcNozbpJ+2Vh9iph7DDCIJ5GY4DbPuH+BQyiPCUqyAI5jwC78lmAd/YrhprYnlSo5p4F1HOt97kEaSVfCVQxBqSUo0QU4OsBTwG7qRQCKK4YlugBHF3ibsOxAbcWwVBdQxbmD3dQHhhuAZ3q/q6kYluwCqowhl0xm8LuDC0g/wT4UuIOSXUCVS8A7SO4fUizajpL2Mi0CcBwnrFjk3EHxItAmgC4igmn8Zweu5bzophItMcAgXExQd5QMhfcYarMAVY4TdoroegyLdAca0sA6ZpGC0R7qLUGxFUPNLqDK44Q1lRRXMdTsAqq4ppKYHsMiDpC0u4Aq7/Y+fZag2mOYvTswF3A5HaTlfAa40zP2AuIOshaBuYDL6SKWYBr/DSRXMcy6x9AEMJhZwmOCrG8lmwBWZhbZ3b5raO5W8k7kPcOssBjAzxYk7bvLM86liDNkVDE0C+DnJGLifZbAuYOsmkpMAGG4q+m+l0o20ncHWRwgmQuIYwpJ+0LcwSEyaCoxCxDHKeBFwt4sctfQknYHVgmMZ773uZf652rcO4ZubJKWwCxAPF3kpZId+C3BJGIJtgFXtDutZpgAmjOHiMD3/QUbgKeBe9ueUBNMAKtjDngZ+NEz7hbgvrYn0wQTwOroIC7hYuDY5DABrI6tyIUTX1/hT8Dn7U8nHssCmjGGlIhDjo2XgLcwARTDGLLz9+Bf/HPI+cCbwGLL82qEuYB4tiBm37f455HF3w/82fakmmIWIJyYbqElpBR8gIQXH0wAoYwjOz/E7C8gO/8A8EfL81o1JgA/HeIW/xBi9v9qeV5DwWIAPy7V8y3+Iv2dn8Xig1mAOmLM/iLwBnCQxH3+ckwAg3F5fkyq9xoZ7XyHuYDBhKZ6zuxnufhgFmA5sRU+l+plufhgAqgS4/Od2U+6yBOCCaDPFGGLfx55dj5bs1/FBNCv8IUs/hLyWkjWZr+KdgHEVvjc4idf4QtFswBiKnznkcUvwuxX0ZwGxlT4DpNReTcGjRZgnH7A57vg4XZ+8qd6TdEmgGqe73sP6BwF73yHNhfgKny+xXcVvqIXH/RYgNgKnzvYKXrxQYcAYnv4jlJAhS8UDQKYIjzaP4rc6C1+5ztKjgGq3yrqi/YXyayTZ1iUagFchW83/sUvssIXSokC6BB+sOMWv7gKXygluoCYg53seviGTUkWIOZgx1X49qPQ7FcpRQAuzw+J9p3ZV5Pq1VGKAGK6d23xK+QugJjuXdfDl13rdpvkLIAmt3Rt5y8jZwHE3NItpodv2OQogNhbukX18A2b3ARQrfCFmn2VFb5QchJA0wrf2XanlTc5VQJjK3wHscX3koMFiK3wuVTPzH4AqQsgJs93L3NYtB9B6gKIuaVbfANnG6T8fQGPIKY8tIdP/cFOE1K1AJuBF7AKX+ukKoAHgfs9Y1yFbx8W7Tcm1TTwKiT6X4lqhe/sKCZUKqkK4BdkkQexQN/nnxnZjAolVQF8BLyPPMVe5W/6X8ZkAd8QSDkL2Ay8DjyAuIOfEbN/BBGCMQRSDQJBvoXjPSTSnwBOAx9iiz9UUrYAxghINQYwRoQJQDkmAOWYAJRjAlCOCUA5JgDlmACUYwJQjglAOSYA5ZgAlGMCUM5/ekiZUD46oo8AAAAASUVORK5CYII=" />
+                    </div>
+                  </div>
+                  <div className="pc-seasons">
+                    <div className="pc-seasons-match">99% Match </div>
+                    <div className="pc-seasons-clasif">13 +</div>
+                    <div className="pc-seasons-episodes">4 Seasons</div>
+                    <div className="pc-seasons-quality">HD</div>
+                  </div>
+                  <div className="pc-genres">
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Mystery</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Crime</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Drama</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//7bEYwjUvlJW7GerM8GYmqwl4oS3.jpg" alt="tvshow" /></div><div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//peNC0eyc3TQJa6x4TdKcBPNP4t0.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//peNC0eyc3TQJa6x4TdKcBPNP4t0.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//zKRBfuRWGbs9R2nxhlNP8CfArUh.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//zKRBfuRWGbs9R2nxhlNP8CfArUh.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//ywBt4WKADdMVgxTR1rS2uFwMYTH.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//ywBt4WKADdMVgxTR1rS2uFwMYTH.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//luhKkdD80qe62fwop6sdrXK9jUT.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//luhKkdD80qe62fwop6sdrXK9jUT.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//7WUHnWGx5OO145IRxPDUkQSh4C7.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//7WUHnWGx5OO145IRxPDUkQSh4C7.jpg" alt="tvshow" /></div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//KoYWXbnYuS3b0GyQPkbuexlVK9.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//KoYWXbnYuS3b0GyQPkbuexlVK9.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//zgZRJZvZn5cpsWAB0zMUdad3iZd.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//zgZRJZvZn5cpsWAB0zMUdad3iZd.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//7TCwgX7oQKxcWYEhSPRmaHe6ULN.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//7TCwgX7oQKxcWYEhSPRmaHe6ULN.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//bQLrHIRNEkE3PdIWQrZHynQZazu.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//bQLrHIRNEkE3PdIWQrZHynQZazu.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//vQiryp6LioFxQThywxbC6TuoDjy.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//vQiryp6LioFxQThywxbC6TuoDjy.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//ggFHVNu6YYI5L9pCfOacjizRGt.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//ggFHVNu6YYI5L9pCfOacjizRGt.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//4RHhqEdI2VV5wHp0rLmKAg9t9h6.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//4RHhqEdI2VV5wHp0rLmKAg9t9h6.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//htJzeRcYI2ewMm4PTrg98UMXShe.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//htJzeRcYI2ewMm4PTrg98UMXShe.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//2exOHePjOTquUsbThPGhuEjYTyA.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//2exOHePjOTquUsbThPGhuEjYTyA.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//4xPIBtOWHzigSNTqbxftzAZS5uT.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//4xPIBtOWHzigSNTqbxftzAZS5uT.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//iiI1YU8akLYWdWuX1qHuMYPvSHC.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//iiI1YU8akLYWdWuX1qHuMYPvSHC.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//1X4h40fcB4WWUmIBK0auT4zRBAV.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//1X4h40fcB4WWUmIBK0auT4zRBAV.jpg" alt="tvshow" />
+            </div>
+          </div>
+          <div className="handle handle-right">
+            <div className="handle-symbol">›</div>
+          </div>
+        </div>
+      </div> */}
+      <div className="category">
+        <h3 className="category-title">Action &amp; Adventure</h3>
+        <div className="container">
+          <div className="handle handle-left">
+            <div className="handle-symbol">‹</div>
+          </div>
+          <div className="slider">
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" alt="tvshow" />
+                <div className="poster-card-info">
+                  <div className="pc-icons">
+                    <div className="pc-icons-menu">
+                      <div className="pc-icon-play">
+                        <img className="pc-icon-play-img" alt="play" src="/assets/iconPlay-573ce638.png" />
+                      </div>
+                      <div className="pc-icon-default">
+                        <img className="pc-icon-default-img white" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAmVJREFUeJzt3D1uFFEQReG7BNgMCHYBJsKwDpIJbugNAYFTr4ffDAfwSrYlZGz3GLu7evqeTyppNNHTe0eaiUoCAAAAAAAAAAAAAAAAAOCgvRzzeczPMT8uP79oPREW82bM+Zjf16a+e914Lizg6Zhv+vfxr+bLmCdtp8Ps3uv2x7+a47bTYXY7TQewazsdZmdNB+Cms2EBFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswggmkUA0SwCiGYRQDSLAKJZBBDNIoBoFgFEswhgEbWNqxYyfVjZnGo6gNMVnPP6vLu804NQe/juWsXG/N98HXN0j3doURs4b1rCyDzO/BrzfO/XaFArV7svaevzce/XaFB7d7svaOvzfe/XaEAA4QHwEzD/rPonoFau1x+V7kva6qz+T2Cpleu1dbv7srY2daev7vEOrWrlem3d9piTFc2Zpi/6bAXn/HvqDt+KNfaPwpoOwE1nwwIsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUA0iwCiWQQQzSKAaBYBRLMIIJpFANEsAohmEUC0naYD2LWdDrOrrdtTARy3nQ6zq5XrtXX7tsevVWxs49q4Wrl+0zLL+u5g9vDhYWrb5idd7DauqfWrz1pPBAAAAAAAAAAAAAAAAADAw/wB6orZ+acWFhQAAAAASUVORK5CYII=" />
+                      </div>
+                      <div className="pc-icon-default pc-thumb">
+                        <img className="pc-icon-default-img" alt="add" src="/assets/iconThumbUp-ad099873.png" />
+                      </div>
+                    </div>
+                    <div className="pc-icon-default pc-arrow">
+                      <img className="pc-icon-default-img" alt="add" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABN2lDQ1BBZG9iZSBSR0IgKDE5OTgpAAAokZWPv0rDUBSHvxtFxaFWCOLgcCdRUGzVwYxJW4ogWKtDkq1JQ5ViEm6uf/oQjm4dXNx9AidHwUHxCXwDxamDQ4QMBYvf9J3fORzOAaNi152GUYbzWKt205Gu58vZF2aYAoBOmKV2q3UAECdxxBjf7wiA10277jTG+38yH6ZKAyNguxtlIYgK0L/SqQYxBMygn2oQD4CpTto1EE9AqZf7G1AKcv8ASsr1fBBfgNlzPR+MOcAMcl8BTB1da4Bakg7UWe9Uy6plWdLuJkEkjweZjs4zuR+HiUoT1dFRF8jvA2AxH2w3HblWtay99X/+PRHX82Vun0cIQCw9F1lBeKEuf1UYO5PrYsdwGQ7vYXpUZLs3cLcBC7dFtlqF8hY8Dn8AwMZP/fNTP8gAAAAJcEhZcwAACxMAAAsTAQCanBgAAAXRaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0NSA3OS4xNjM0OTksIDIwMTgvMDgvMTMtMTY6NDA6MjIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjMtMDEtMjFUMjE6MDk6MjItMDM6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIzLTAxLTIxVDIxOjI0OjA2LTAzOjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozZWNhYjBkNC1kYjZlLWVjNGItODA4My0wYmU5ZWU0NjA2OTUiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxNzFiMjBhYy1lZDhlLWJiNDgtOWUyZi1hNDUwYjAwZWQ3MjciPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjE3MWIyMGFjLWVkOGUtYmI0OC05ZTJmLWE0NTBiMDBlZDcyNyIgc3RFdnQ6d2hlbj0iMjAyMy0wMS0yMVQyMTowOToyMi0wMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDpjYzNkMDU0YS1kMzg0LTY5NDMtOWIwNC03MDg1OGQ4MDgxNjciIHN0RXZ0OndoZW49IjIwMjMtMDEtMjFUMjE6MjQ6MDYtMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1w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" />
+                    </div>
+                  </div>
+                  <div className="pc-seasons">
+                    <div className="pc-seasons-match">99% Match </div>
+                    <div className="pc-seasons-clasif">13 +</div>
+                    <div className="pc-seasons-episodes">11 Seasons</div>
+                    <div className="pc-seasons-quality">HD</div>
+                  </div>
+                  <div className="pc-genres">
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Action &amp; Adventure</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Drama</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                    <div className="pc-genres-single">
+                      <div className="pc-genres-name">Sci-Fi &amp; Fantasy</div>
+                      <div className="pc-genre-divider"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//cvhNj9eoRBe5SxjCbQTkh05UP5K.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//cvhNj9eoRBe5SxjCbQTkh05UP5K.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//7WUHnWGx5OO145IRxPDUkQSh4C7.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//7WUHnWGx5OO145IRxPDUkQSh4C7.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//bQLrHIRNEkE3PdIWQrZHynQZazu.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//bQLrHIRNEkE3PdIWQrZHynQZazu.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//2exOHePjOTquUsbThPGhuEjYTyA.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//2exOHePjOTquUsbThPGhuEjYTyA.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//vpfJK9F0UJNcAIIeC42oJyKMnZQ.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//vpfJK9F0UJNcAIIeC42oJyKMnZQ.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//1X4h40fcB4WWUmIBK0auT4zRBAV.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//1X4h40fcB4WWUmIBK0auT4zRBAV.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//wEo5pzSZ3MF4EzNvY2R1OZNX266.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//wEo5pzSZ3MF4EzNvY2R1OZNX266.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//mYLOqiStMxDK3fYZFirgrMt8z5d.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//mYLOqiStMxDK3fYZFirgrMt8z5d.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//nJUHX3XL1jMkk8honUZnUmudFb9.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//nJUHX3XL1jMkk8honUZnUmudFb9.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//7Bttz4hEspKlpU0Me57dkHNR3nf.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//7Bttz4hEspKlpU0Me57dkHNR3nf.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//4AyYGYGbHXDcsJaXK9rrSUpCYPe.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//4AyYGYGbHXDcsJaXK9rrSUpCYPe.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//jhdSPDlhswjN1r6O0pGP3ZvQgU8.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//jhdSPDlhswjN1r6O0pGP3ZvQgU8.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//euYz4adiSHH0GE3YnTeh3uLfBvL.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//euYz4adiSHH0GE3YnTeh3uLfBvL.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//pUhJGETy2sec4vEkiqJ9eGeIywc.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//pUhJGETy2sec4vEkiqJ9eGeIywc.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//8eJf0hxgIhE6QSxbtuNCekTddy1.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//8eJf0hxgIhE6QSxbtuNCekTddy1.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//stTEycfG9928HYGEISBFaG1ngjM.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//stTEycfG9928HYGEISBFaG1ngjM.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//zqjSex7DZn7p4dU7mMktdJ8zQV5.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//zqjSex7DZn7p4dU7mMktdJ8zQV5.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//m7tG5E1EbywuwTsl6hq990So0Bx.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//m7tG5E1EbywuwTsl6hq990So0Bx.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//sz4zF5z9zyFh8Z6g5IQPNq91cI7.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//sz4zF5z9zyFh8Z6g5IQPNq91cI7.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//wcaDIAG1QdXQLRaj4vC1EFdBT2.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//wcaDIAG1QdXQLRaj4vC1EFdBT2.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//rDFy1fUU6OC3Mm0CLFB7u0fGwVN.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//rDFy1fUU6OC3Mm0CLFB7u0fGwVN.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//zyshFjmlDXSzfns2Qk81cfIFfPP.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//zyshFjmlDXSzfns2Qk81cfIFfPP.jpg" alt="tvshow" />
+            </div>
+          </div>
+          <div className="handle handle-right">
+            <div className="handle-symbol">›</div>
+          </div>
+        </div>
+      </div>
+      <div className="category">
+        <h3 className="category-title">Documentals</h3>
+        <div className="container">
+          <div className="handle handle-left">
+            <div className="handle-symbol">‹</div>
+          </div>
+          <div className="slider">
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//hBB4fezbppL4Xm3hJQPtg7KTUei.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//hBB4fezbppL4Xm3hJQPtg7KTUei.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//2uuVIAb4MtPmMNTpOyID5V8DzrU.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//2uuVIAb4MtPmMNTpOyID5V8DzrU.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//h3WOQ5IxMaIIjiNO7Kb7em9ndRc.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//h3WOQ5IxMaIIjiNO7Kb7em9ndRc.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//giUBXYnDAaJgNqA6iE3BMVE2EHp.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//giUBXYnDAaJgNqA6iE3BMVE2EHp.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//6stEKYqgLBhSieTRnnZ5ShE5ZPS.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//6stEKYqgLBhSieTRnnZ5ShE5ZPS.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//EpDuYIK81YtCUT3gH2JDpyj8Qk.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//EpDuYIK81YtCUT3gH2JDpyj8Qk.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//9MxhqYvwx8FSb5cRWUWEDfpWSfo.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//9MxhqYvwx8FSb5cRWUWEDfpWSfo.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//mniuxYgwoNJpmOI2eXpm4hYK7wi.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//mniuxYgwoNJpmOI2eXpm4hYK7wi.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//aqM6QnuhSXzjHlKbXyKUqxaGiWu.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//aqM6QnuhSXzjHlKbXyKUqxaGiWu.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//yMdFsHKp4YX2CUkAQcZswxXDuoe.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//yMdFsHKp4YX2CUkAQcZswxXDuoe.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//6X2hftdC8y78SKMSgfzeUItqaVq.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//6X2hftdC8y78SKMSgfzeUItqaVq.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//beBB1ZnPOxG64dlTYKsEO8BwEGf.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//beBB1ZnPOxG64dlTYKsEO8BwEGf.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//gtkxUUmHDF31iDUOlxQqUXmiU71.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//gtkxUUmHDF31iDUOlxQqUXmiU71.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//dwYzpyRwf2rytD3PSLProDMLJ1c.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//dwYzpyRwf2rytD3PSLProDMLJ1c.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//dc9IY0ZT2T3gw0RfjmQdsoWp992.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//dc9IY0ZT2T3gw0RfjmQdsoWp992.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//8efvPqH6rdYhng60T7pLGaNs7Jx.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//8efvPqH6rdYhng60T7pLGaNs7Jx.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//uRMi6q4mazNTZ2HKdiY6RP5noDW.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//uRMi6q4mazNTZ2HKdiY6RP5noDW.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//3YUXRrNNHzBIFOiFB8hpyxVlzzs.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//3YUXRrNNHzBIFOiFB8hpyxVlzzs.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//v2BHRwtQVkt5fssLdo5MpFgHJPY.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//v2BHRwtQVkt5fssLdo5MpFgHJPY.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//8L0e4ecjsLZirpAuTfMjFf6CufP.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//8L0e4ecjsLZirpAuTfMjFf6CufP.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//g0CcpIzTA3nWETpLiatdnTcU2Qn.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//g0CcpIzTA3nWETpLiatdnTcU2Qn.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//fPpDR6kw8bA0iZ8a0dUbexVVzn3.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//fPpDR6kw8bA0iZ8a0dUbexVVzn3.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//5o07ps0QZ0bNoRYxTn9cPdRWlUu.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//5o07ps0QZ0bNoRYxTn9cPdRWlUu.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//q5jxpBFJvwMeqMI7Rg5cqZPdE7V.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//q5jxpBFJvwMeqMI7Rg5cqZPdE7V.jpg" alt="tvshow" />
+            </div>
+          </div>
+          <div className="handle handle-right">
+            <div className="handle-symbol">›</div>
+          </div>
+        </div>
+      </div>
+      <div className="category">
+        <h3 className="category-title">War &amp; Politics</h3>
+        <div className="container">
+          <div className="handle handle-left">
+            <div className="handle-symbol">‹</div>
+          </div>
+          <div className="slider">
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//bQLrHIRNEkE3PdIWQrZHynQZazu.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//bQLrHIRNEkE3PdIWQrZHynQZazu.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//8eJf0hxgIhE6QSxbtuNCekTddy1.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//8eJf0hxgIhE6QSxbtuNCekTddy1.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//rDFy1fUU6OC3Mm0CLFB7u0fGwVN.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//rDFy1fUU6OC3Mm0CLFB7u0fGwVN.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//59SVNwLfoMnZPPB6ukW6dlPxAdI.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//59SVNwLfoMnZPPB6ukW6dlPxAdI.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//6iSnec83UEMgLOXAtGYwaVNHLjR.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//6iSnec83UEMgLOXAtGYwaVNHLjR.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//bfxwMdQyJc0CL24m5VjtWAN30mt.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//bfxwMdQyJc0CL24m5VjtWAN30mt.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//6GAvS2e6VIRsms9FpVt33PsCoEW.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//6GAvS2e6VIRsms9FpVt33PsCoEW.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//z8yXhmNmc54TsMK2Ig4V4SHdkOX.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//z8yXhmNmc54TsMK2Ig4V4SHdkOX.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//oMmqtafm6Rdlka1ejJeC9BDWzyO.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//oMmqtafm6Rdlka1ejJeC9BDWzyO.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//5R125JAIh1N38pzHp2dRsBpOVNY.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//5R125JAIh1N38pzHp2dRsBpOVNY.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//6rhuM3oMoEWKxAdrm7IyM8oq8cC.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//6rhuM3oMoEWKxAdrm7IyM8oq8cC.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//eLdcio9HBKzsdIJGeD80oObDfkr.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//eLdcio9HBKzsdIJGeD80oObDfkr.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//11Hs7WmsW2htHTKQrx3nK9Ke8aG.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//11Hs7WmsW2htHTKQrx3nK9Ke8aG.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//vFtsI6Nk3cy2l4LGoh1aFRZKaQ7.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//vFtsI6Nk3cy2l4LGoh1aFRZKaQ7.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//6Nl1ablo4DNTLb4ZH7Mycz81AEt.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//6Nl1ablo4DNTLb4ZH7Mycz81AEt.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//doqvfJojBwtprn3qPxb4ndO3lom.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//doqvfJojBwtprn3qPxb4ndO3lom.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//14xKxbF3Si8m5u0m5yPj9ZGlEkj.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//14xKxbF3Si8m5u0m5yPj9ZGlEkj.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//x9Y1IMFdY8Ma222KcQadFEau0EB.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//x9Y1IMFdY8Ma222KcQadFEau0EB.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//2FQKBkUvvWhfjpXr5THFLEW3E7e.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//2FQKBkUvvWhfjpXr5THFLEW3E7e.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//mZKGzq3nblFMmsQ45muvN3MhrJL.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//mZKGzq3nblFMmsQ45muvN3MhrJL.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//IlthpFjx62INuCZAuTi8yo9A7R.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//IlthpFjx62INuCZAuTi8yo9A7R.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//ptQaNLJUTUrEFdpE5pAH2PtSzvl.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//ptQaNLJUTUrEFdpE5pAH2PtSzvl.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//udojgSVlepgbA1AKbFvy2tTjv0w.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//udojgSVlepgbA1AKbFvy2tTjv0w.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//m42lb4UxkpaFil4bw0bqqjlWCY4.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//m42lb4UxkpaFil4bw0bqqjlWCY4.jpg" alt="tvshow" />
+            </div>
+          </div>
+          <div className="handle handle-right">
+            <div className="handle-symbol">›</div>
+          </div>
+        </div>
+      </div>
+      <div className="category">
+        <h3 className="category-title">Family friendly</h3>
+        <div className="container">
+          <div className="handle handle-left">
+            <div className="handle-symbol">‹</div>
+          </div>
+          <div className="slider">
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//zI3E2a3WYma5w8emI35mgq5Iurx.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//zI3E2a3WYma5w8emI35mgq5Iurx.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//ckLLIsNy3Z0Go1PYHA2PHzVymUA.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//ckLLIsNy3Z0Go1PYHA2PHzVymUA.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//zqjSex7DZn7p4dU7mMktdJ8zQV5.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//zqjSex7DZn7p4dU7mMktdJ8zQV5.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//VYnnyA2hyxi3VUPgCA71mMtt69.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//VYnnyA2hyxi3VUPgCA71mMtt69.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//tkaduqdhFrF1vp8L55OJfB5jw8Z.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//tkaduqdhFrF1vp8L55OJfB5jw8Z.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//y0r27LkhX6AZNqo2Q5FUYmwi5wz.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//y0r27LkhX6AZNqo2Q5FUYmwi5wz.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//30P6ifagQ3fguTsI33KMmDLTAx6.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//30P6ifagQ3fguTsI33KMmDLTAx6.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//ohfKOxy4028jm2XQL7Wy6cVMKhm.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//ohfKOxy4028jm2XQL7Wy6cVMKhm.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//laEZvTqM80UaplUaDSCCbWhlyEV.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//laEZvTqM80UaplUaDSCCbWhlyEV.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//gHtEhlAZHxMawOiPq7JoKwkmETQ.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//gHtEhlAZHxMawOiPq7JoKwkmETQ.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//cezQyM5cO454vUdLiLOkv78K64D.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//cezQyM5cO454vUdLiLOkv78K64D.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//udaLIJ6Na7GOHjvTlyP9JFPTccv.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//udaLIJ6Na7GOHjvTlyP9JFPTccv.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//gxdTn5UwvriN1EzDSNnWr5AAQN7.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//gxdTn5UwvriN1EzDSNnWr5AAQN7.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//lMqruIEov5PSA7eu8mF0I4IiKda.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//lMqruIEov5PSA7eu8mF0I4IiKda.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//fqb9X4th2p2voefRLqdv1xoZQmC.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//fqb9X4th2p2voefRLqdv1xoZQmC.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//f4QCYoBcJib8BprM4DUIQBMckeQ.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//f4QCYoBcJib8BprM4DUIQBMckeQ.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//kP8Z51s9D8tiGnoRbL88db0e2jv.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//kP8Z51s9D8tiGnoRbL88db0e2jv.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//uc2gtWczT58BiAUJWFz9P5aZmNF.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//uc2gtWczT58BiAUJWFz9P5aZmNF.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//3xWzlLZ0kAD6SkVZTekFM9lxZyP.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//3xWzlLZ0kAD6SkVZTekFM9lxZyP.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//3aQipkhSCHUmaHjImqEqT80k6GP.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//3aQipkhSCHUmaHjImqEqT80k6GP.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//joDbBLtNlj8auqtQ3QFGMzHAq3w.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//joDbBLtNlj8auqtQ3QFGMzHAq3w.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//rrOItUbzFYzsl2Wl4XJjSeubb97.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//rrOItUbzFYzsl2Wl4XJjSeubb97.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//9QwbXpSZGbgLgvZOelvGampEhMv.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//9QwbXpSZGbgLgvZOelvGampEhMv.jpg" alt="tvshow" />
+            </div>
+            <div className="poster-container">
+              <div className="poster-card">
+                <img className="poster-card-img" src="https://image.tmdb.org/t/p/original//jwodl4IPNPybAIhM9ATFxiwJKMd.jpg" alt="tvshow" /> <span>"Loading..."</span>
+              </div>
+              <img className="poster-img" src="https://image.tmdb.org/t/p/original//jwodl4IPNPybAIhM9ATFxiwJKMd.jpg" alt="tvshow" />
+            </div>
+          </div>
+          <div className="handle handle-right">
+            <div className="handle-symbol">›</div>
           </div>
         </div>
       </div>

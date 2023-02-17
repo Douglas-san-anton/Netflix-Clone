@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #141414;
+  font-family: NetflixRegular, sans-serif;
+  user-select: none;
+  position: relative;
+  color: white;
+}
+.catalogue {
+  position: relative;
+  margin-top: 600px;
+  background: transparent;
+}
+
+.category {
+  margin-bottom: 25px;
+}
+
+.category-title {
+  margin: 0px 0 0 5rem;
+  width: 90%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.handle {
+  width: 5rem;
+  background: rgba(0, 0, 0, .8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 80px;
+  z-index: 1;
+  margin: 0.3rem 0;
+  cursor: pointer;
+}
+
+
+.handle-symbol {
+  opacity: 0;
+  user-select: none;
+  transition: transform .3s ease-in-out;
+}
+
+.slider {
+  --slider-index: 0;
+  --imgs-per-screen: 6;
+  display: flex;
+  width: 90%;
+  transform: translate(calc(var(--slider-index) * -100%));
+  transition: transform .4s ease-in-out;
+}
+
+.poster-container {
+  flex: 0 0 calc(100% / 6);
+  max-width: calc(100% / 6);
+  position: relative;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.poster-card {
+  position: absolute;
+  opacity: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: #000 0 5px 15px;
+  width: 130%;
+  height: 100%;
+  transition: all .4s ease;
+}
+
+.poster-card-img {
+  position: absolute;
+  bottom: 25px;
+}
+
+.poster-img,
+.poster-card-img {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  object-fit: cover;
+  object-position: top;
+}
+
+.poster-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  background: #141414;
+  width: 100%;
+  height: 40%;
+}
+
+.pc-icons {
+  display: flex;
+  margin: 0 0 10px 10px;
+}
+
+.pc-icons-menu {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pc-icon-play {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pc-icon-play-img {
+  width: 17px;
+  padding-left: 2px;
+}
+
+.pc-icon-default {
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: 1px solid #808080;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pc-icon-default-img {
+  width: 15px;
+}
+
+.white {
+  filter: brightness(0) saturate(100%) invert(98%) sepia(0%) saturate(0%) hue-rotate(338deg) brightness(101%) contrast(104%);
+}
+
+.pc-icon-default {
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: 1px solid #808080;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pc-arrow {
+  position: absolute;
+  right: 10px;
+  transform: rotate(90deg);
+  padding-left: 2px;
+}
+
+.pc-icon-default {
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: 1px solid #808080;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.pc-seasons {
+  display: flex;
+  font-size: 10px;
+  gap: 5px;
+  margin: 0 10px;
+  align-items: center;
+}
+
+.pc-seasons-match {
+  color: #43c166;
+}
+
+.pc-seasons-clasif {
+  border: 1px solid #808080;
+  border-radius: 1px;
+  padding: 0 5px;
+}
+
+.pc-seasons-quality {
+  border: 1px solid #808080;
+  padding: 0 3px;
+  font-size: 8px;
+  border-radius: 2px;
+}
+
+.pc-genres {
+  display: flex;
+  gap: 2px;
+  margin: 10px 10px 0;
+}
+
+.pc-genres-single {
+  display: flex;
+  align-items: center;
+}
+
+.pc-genres-name {
+  font-size: 9px;
+  margin-right: 1px;
+  text-align: center;
+}
+
+.pc-genre-divider {
+  width: 3px;
+  height: 3px;
+  border-radius: 2px;
+  background: #808080;
+  margin: 0 3px;
+}
+
