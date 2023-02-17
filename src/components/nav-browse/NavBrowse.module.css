@@ -1,5 +1,8 @@
 .pinning__header {
   height: 70px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
