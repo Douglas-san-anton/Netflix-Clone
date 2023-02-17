@@ -29,6 +29,10 @@ body {
   justify-content: center;
 }
 
+.container:hover .handle-symbol {
+  opacity: 1;
+}
+
 .handle {
   width: 5rem;
   background: rgba(0, 0, 0, .8);
@@ -41,7 +45,6 @@ body {
   margin: 0.3rem 0;
   cursor: pointer;
 }
-
 
 .handle-symbol {
   opacity: 0;
@@ -73,8 +76,15 @@ body {
   overflow: hidden;
   box-shadow: #000 0 5px 15px;
   width: 130%;
-  height: 100%;
+  top: 110px;
+  height: 80%;
   transition: all .4s ease;
+}
+
+.poster-card.activeRight:hover {
+  transform: scale(1.4) translate(14%, -15%);
+  opacity: 1;
+  z-index: 2;
 }
 
 .poster-card-img {
@@ -128,34 +138,12 @@ body {
   padding-left: 2px;
 }
 
-.pc-icon-default {
-  width: 25px;
-  height: 25px;
-  background: transparent;
-  border: 1px solid #808080;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .pc-icon-default-img {
   width: 15px;
 }
 
 .white {
   filter: brightness(0) saturate(100%) invert(98%) sepia(0%) saturate(0%) hue-rotate(338deg) brightness(101%) contrast(104%);
-}
-
-.pc-icon-default {
-  width: 25px;
-  height: 25px;
-  background: transparent;
-  border: 1px solid #808080;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .pc-arrow {
@@ -175,7 +163,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 
 .pc-seasons {
   display: flex;
