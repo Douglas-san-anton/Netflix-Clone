@@ -8,23 +8,22 @@ export const Faq = () => {
       <div className={Styles.faq__container}>
         <h1>Preguntas frecuentes</h1>
         <ul className={Styles.faq__ul}>
-          <li>
-            <button className={Styles.faq__question}>
+          <li className={Styles.faq__questions}>
+            <input type="checkbox" id="q1" />
+            <label className={Styles.faq__question} for="q1">
               {"¿Qué es Netflix?"}
               <svg id="thin-x" viewBox="0 0 26 26" focusable="true" className={Styles.svg__open} >
                 <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
               </svg>
-            </button>
+            </label>
             <div className={Styles.faq__answer}>
-              <span>
-                Netflix es un servicio de streaming que ofrece una gran variedad de películas, series y documentales premiados en casi cualquier pantalla conectada a internet.
-                <br />
-                <br />
-                Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. Siempre hay algo nuevo por descubrir, ¡y todas las semanas se agregan más películas y series!
-              </span>
+              Netflix es un servicio de streaming que ofrece una gran variedad de películas, series y documentales premiados en casi cualquier pantalla conectada a internet.
+              <br />
+              <br />
+              Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. Siempre hay algo nuevo por descubrir, ¡y todas las semanas se agregan más películas y series!
             </div>
           </li>
-          <li>
+          {/* <li>
             <button className={Styles.faq__question}>
               {"¿Cuánto cuesta Netflix?"}
               <svg id="thin-x" viewBox="0 0 26 26" focusable="true" className={Styles.svg__open} >
@@ -45,15 +44,13 @@ export const Faq = () => {
               </svg>
             </button>
             <div className={Styles.faq__answer}>
-              <span>
-                Disfruta donde quieras, cuando quieras. Inicia sesión en tu cuenta de Netflix para ver contenido al instante a través de netflix.com desde tu computadora personal o en cualquier dispositivo con conexión a internet que cuente con la app de Netflix, como smart TV, smartphones, tablets, reproductores multimedia y consolas de juegos.
-                <br />
-                <br />
-                Además, puedes descargar tus series favoritas con iOS, Android o la app para Windows 10. Con la función de descarga, puedes ver donde vayas y sin conexión a internet. Lleva Netflix contigo adonde sea.
-              </span>
+              Disfruta donde quieras, cuando quieras. Inicia sesión en tu cuenta de Netflix para ver contenido al instante a través de netflix.com desde tu computadora personal o en cualquier dispositivo con conexión a internet que cuente con la app de Netflix, como smart TV, smartphones, tablets, reproductores multimedia y consolas de juegos.
+              <br />
+              <br />
+              Además, puedes descargar tus series favoritas con iOS, Android o la app para Windows 10. Con la función de descarga, puedes ver donde vayas y sin conexión a internet. Lleva Netflix contigo adonde sea.
             </div>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <button className={Styles.faq__question}>
               {"¿Cómo cancelo?"}
               <svg id="thin-x" viewBox="0 0 26 26" focusable="true" className={Styles.svg__open} >
@@ -94,7 +91,7 @@ export const Faq = () => {
                 Los perfiles para niños incluyen controles parentales protegidos por PIN que te permiten restringir el contenido que pueden ver los niños en función de la clasificación por edad y bloquear determinados títulos que no quieras que los niños vean.
               </span>
             </div>
-          </li>
+          </li> */}
 
         </ul>
 
