@@ -61,6 +61,8 @@
   right: 1em;
   top: 35%;
   width: 1em;
+  transform: rotate(45deg);
+  transition: all 0.2s ease;
 }
 
 .faq__questions {
@@ -73,6 +75,7 @@
   background: #303030;
   max-height: 0;
   overflow: hidden;
+  transition: all 0.2s ease;
 }
 
 .faq__questions input[type="checkbox"] {
@@ -82,4 +85,8 @@
 .faq__questions input[type="checkbox"]:checked ~ .faq__answer {
   max-height: 600px;
   padding: 30px;
+}
+
+.faq__questions input[type="checkbox"]:checked ~ .faq__question svg {
+  transform: rotate(0deg);
 }
