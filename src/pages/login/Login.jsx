@@ -21,21 +21,24 @@ export const Login = () => {
             <div className={Styles.login__form_main}>
               <h1>Inicia sesión</h1>
 
-              <form method='post'>
-                <div className={Styles.login__form_container}>
-                  <label className={Styles.login__label_container}>
-                    <input type="text" />
-                    <label>Email o número de teléfono</label>
+              <form className={Styles.form__container} method='post'>
+                <form className={Styles.form}>
+                  <input type="text" maxLength={50} required />
+                  <label className={Styles.hero__form_label}>
+                    <span className={Styles.hero__form_span}>
+                      Email o número de teléfono
+                    </span>
                   </label>
-                </div>
+                </form>
 
-                <div className={Styles.login__form_container}>
-                  <label className={Styles.login__label_container}>
-                    <input type="password" />
-                    <label>Contraseña</label>
+                <form className={Styles.form}>
+                  <input type="password" maxLength={50} required />
+                  <label className={Styles.hero__form_label}>
+                    <span className={Styles.hero__form_span}>
+                      Contraseña
+                    </span>
                   </label>
-                </div>
-
+                </form>
 
                 <button className={Styles.login__btn}>
                   <Link className={Styles.login__btn_link} to={'/browse'}>Iniciar sesión</Link>
@@ -54,9 +57,9 @@ export const Login = () => {
 
             <div className={Styles.login__form_other}>
               <div className={Styles.login__signup_now}>
-              {'¿Primera vez en Netflix? '}
-              <a target="_self" href="/">Suscríbete ahora</a>
-              {'.'}
+                {'¿Primera vez en Netflix? '}
+                <a target="_self" href="/">Suscríbete ahora</a>
+                {'.'}
               </div>
               <div className={Styles.login__recaptcha}>
                 <p>
