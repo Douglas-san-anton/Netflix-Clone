@@ -7,9 +7,14 @@ export const Form = () => {
       <h3>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h3>
       <div className={Styles.hero__form_email}>
 
-        <label className={Styles.hero__form_input}>
-          <input autoComplete='Email' placeholder='Email' type="email" maxLength={50} minLength={5} />
-        </label>
+        <form className={Styles.form}>
+          <input maxLength={50} minLength={5} required />
+          <label className={Styles.hero__form_label}>
+            <span className={Styles.hero__form_span}>
+              Email
+            </span>
+          </label>
+        </form>
 
         <button className={Styles.hero__form_btn}>
           <span>Comenzar</span>
