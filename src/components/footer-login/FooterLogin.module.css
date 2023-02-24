@@ -30,6 +30,7 @@
 .footer__link:hover,
 .footer__top_a:hover {
   text-decoration: underline;
+  color: #757575;
 }
 
 .footer__links {
