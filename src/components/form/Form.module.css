@@ -35,13 +35,13 @@
   background: rgb(27 21 19 / 75%);
   color: white;
   padding: 10px 10px;
+  font-size: 16px;
   outline: none;
   border: none;
 }
 
 .hero__form_label {
   position: absolute;
-  bottom: 5px;
   left: 5px;
   width: 100%;
   height: 100%;
@@ -58,7 +58,7 @@
 
 .form input:focus + .hero__form_label .hero__form_span,
 .form input:valid+.hero__form_label .hero__form_span {
-  transform: translateY(-120%);
+  transform: translateY(-110%);
   font-size: 14px;
   transition: all .3s ease;
 }
