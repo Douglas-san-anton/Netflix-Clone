@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import './CatalogueBrowse.css'
+// import './CatalogueBrowse.css'
 
 export const CatalogueBrowse = () => {
 
@@ -11,11 +11,39 @@ export const CatalogueBrowse = () => {
 
   const [movies, setMovies] = useState([])
   const [searchKey, setSearchKey] = useState('')
-  const [movie, setMovie] = useState({ title: 'Loading Movies' })
+  const [movie, setMovie] = useState({})
 
+  const fetchMovies = async (searchKey) => {
+    const type = searchKey ? "search" : "discover"
+    const { data: { results },
+    } = await axios.get(`${API_URL}/${type}/movie`, {
+      params: {
+        api_key: API_KEY,
+        query: searchKey,
+      },
+    })
+
+    setMovies(results)
+    // setMovie(results[0])
+  }
+
+  useEffect(() => {
+    fetchMovies(setMovie)
+  }, [])
 
   return (
     <div>
+
+      <div>
+        <div>
+          {movies.map((movie) => {
+            <div key={movie.id}>
+              <img src={`${URL_IMAGE + movie.poster_path}`} />
+              <h4>{movie.title}</h4>
+            </div>
+          })}
+        </div>
+      </div>
 
     </div>
   )
