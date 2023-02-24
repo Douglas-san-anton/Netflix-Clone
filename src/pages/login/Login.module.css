@@ -96,12 +96,16 @@
 
 .form input {
   width: 100%;
-  height: 100%;
+  height: 135%;
   background-color: #333;
   color: white;
   padding: 10px 20px;
   outline: none;
   border: none;
+}
+
+.form label {
+  margin: 0;
 }
 
 .hero__form_label {
@@ -117,14 +121,14 @@
   color: #8c8c8c;
   position: absolute;
   font-size: 16px;
-  left: 10px;
-  bottom: 15px;
+  left: 20px;
+  bottom: 12px;
   transition: all .3s ease;
 }
 
 .form input:focus+.hero__form_label .hero__form_span,
 .form input:valid+.hero__form_label .hero__form_span {
-  transform: translateY(-90%);
+  transform: translateY(-80%);
   font-size: 14px;
   transition: all .3s ease;
 }
@@ -143,6 +147,7 @@
 
 .login__btn_link {
   color: white;
+  font-weight: 600;
   text-decoration: none;
   padding: 1rem 5rem;
 }
@@ -164,8 +169,13 @@
 .login__remember_me {
   display: flex;
 }
+
 .login__remember_me input{
   margin-right: 5px;
+}
+
+.login__remember_me label{
+  margin: 0;
 }
 
 .login__remember_me_span {

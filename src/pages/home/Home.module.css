@@ -53,6 +53,7 @@
   position: absolute;
   margin-top: 7px;
   margin-left: 5px;
+  fill: white;
 }
 
 .nav__select {
@@ -76,6 +77,11 @@
   color: white;
   border-radius: 3px;
   font-family: Helvetica, sans-serif;
+}
+
+.nav__button:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .hero__card {
