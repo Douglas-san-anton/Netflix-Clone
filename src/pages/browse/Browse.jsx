@@ -10,7 +10,7 @@ export const Browse = () => {
     <div className={Styles.container}>
       <NavBrowse />
       <MainBrowse />
-      {/* <CatalogueBrowse /> */}
+      <CatalogueBrowse />
       <Footer />
     </div>
   )

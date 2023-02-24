@@ -1,0 +1,11 @@
+.container {
+  z-index: 20;
+  position: relative;
+  margin-top: 800px;
+}
+
+.container img {
+  background-size: cover;
+  background-position: center;
+  height: 230px;
+}
