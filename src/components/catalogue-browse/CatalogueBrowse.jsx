@@ -1,8 +1,14 @@
-import React from 'react'
+import { useEffect, useContext } from 'react'
 import Styles from '../catalogue-browse/CatalogueBrowse.module.css'
 import { MovieBrowse } from '../movie-browse/MovieBrowse'
+import { Context } from '../../context/DataContext.jsx';
 
 export const CatalogueBrowse = () => {
+  let data = useContext(Context)
+
+  useEffect(() => {
+    console.log(data);
+  }, [data])
 
   return (
     <div className={Styles.container}>

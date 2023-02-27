@@ -8,15 +8,13 @@ function App() {
 
   return (
     <Router>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/browse' element={
-          <DataShare value={'dame bolaa'}>
-            <Browse />
-          </DataShare>
-        } />
-      </Routes>
+      <DataShare>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/browse' element={<Browse />} />
+        </Routes>
+      </DataShare>
     </Router>
   )
 }
