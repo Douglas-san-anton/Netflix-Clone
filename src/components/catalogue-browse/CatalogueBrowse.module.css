@@ -1,11 +1,15 @@
 .container {
   z-index: 20;
   position: relative;
-  margin-top: 800px;
+  width: 90%;
+  margin: 650px auto 0;
 }
 
-.container img {
-  background-size: cover;
-  background-position: center;
-  height: 230px;
+.titles {
+  color: white;
+  font-size: 21px;
+}
+
+.slider {
+  margin: 3vw 0;
 }
