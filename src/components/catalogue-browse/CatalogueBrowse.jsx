@@ -19,6 +19,7 @@ export const CatalogueBrowse = () => {
     })
 
     cb(results)
+    console.log(results);
   }
 
   useEffect(() => {
