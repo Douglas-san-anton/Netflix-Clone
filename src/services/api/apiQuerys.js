@@ -24,7 +24,7 @@ export const fetchMovies = async (cb) => {
 }
 
 // type puede ser tv o movies
-export const fetchTrending = async (cb, type, id) => {
+export const fetchDiscovers = async (cb, type, id) => {
   try {
     const { data: { results },
     } = await axios.get(VITE_API_URL + fetchDiscoverMovies(id, type), {

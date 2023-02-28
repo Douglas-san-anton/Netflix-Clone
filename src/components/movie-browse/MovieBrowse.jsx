@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { fetchTrending } from '../../services/api/apiQuerys'
+import { fetchDiscovers } from '../../services/api/apiQuerys'
 import Styles from '../movie-browse/MovieBrowse.module.css'
 
 const { VITE_URL_IMAGE } = import.meta.env
@@ -10,7 +10,7 @@ export const MovieBrowse = ({ id, name }) => {
 
   useEffect(() => {
     console.log(id)
-    fetchTrending(setData, 'movie', id)
+    fetchDiscovers(setData, 'movie', id)
   }, [])
 
   return (
