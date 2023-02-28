@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.title {
+  color: white;
+}
+
 .img {
   background-size: cover;
   background-position: center;

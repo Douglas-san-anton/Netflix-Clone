@@ -1,4 +1,5 @@
 import axios from "axios";
+import { fetchDiscoverMovies } from '../api/endpoints'
 
 const { VITE_API_KEY, VITE_API_URL } = import.meta.env
 
@@ -22,3 +23,21 @@ export const fetchMovies = async (cb) => {
   cb(results)
 }
 
+// type puede ser tv o movies
+export const fetchTrending = async (cb, type, id) => {
+  try {
+    const { data: { results },
+    } = await axios.get(VITE_API_URL + fetchDiscoverMovies(id, type), {
+      params: {
+        api_key: VITE_API_KEY
+      },
+    })
+
+    cb((previous) => {
+      return { ...previous, movies: results, isLoading: false }
+    })
+  } catch (error) {
+    console.log(error);
+  }
+
+}
