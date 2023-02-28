@@ -9,13 +9,12 @@ export const ContextProvider = Context.Provider
 export const DataShare = ({ children }) => {
   const [genres, setGenres] = useState([])
 
-
   useEffect(() => {
-    genres.length > 0 && fetchGenres(cb)
+    genres.length <= 0 && fetchGenres(setGenres)
   }, [])
 
   return (
-    <ContextProvider value={{ genres }}>
+    <ContextProvider value={genres}>
       {children}
     </ContextProvider>
   )

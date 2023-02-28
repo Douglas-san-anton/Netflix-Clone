@@ -4,29 +4,30 @@ import { MovieBrowse } from '../movie-browse/MovieBrowse'
 import { Context } from '../../context/DataContext.jsx';
 
 export const CatalogueBrowse = () => {
-  let data = useContext(Context)
+  let { genres } = useContext(Context)
+
 
   useEffect(() => {
-    console.log(data);
-  }, [data])
+    console.log(genres);
+  }, [genres])
 
   return (
     <div className={Styles.container}>
       <div className={Styles.slider}>
-        <h2 className={Styles.titles}>Populares en Netfilx</h2>
-        <MovieBrowse />
+        <h2 className={Styles.titles}>{genres && genres[0].name}</h2>
+        <MovieBrowse id={genres && genres[0].id} />
       </div>
       <div className={Styles.slider}>
-        <h2 className={Styles.titles}>Tendencias</h2>
-        <MovieBrowse />
+        <h2 className={Styles.titles}>{genres && genres[1].name}</h2>
+        <MovieBrowse id={genres && genres[1].id} />
       </div>
       <div className={Styles.slider}>
-        <h2 className={Styles.titles}>Series</h2>
-        <MovieBrowse />
+        <h2 className={Styles.titles}>{genres && genres[2].name}</h2>
+        <MovieBrowse id={genres && genres[2].id} />
       </div>
       <div className={Styles.slider}>
-        <h2 className={Styles.titles}>Documentales</h2>
-        <MovieBrowse />
+        <h2 className={Styles.titles}>{genres && genres[3].name}</h2>
+        <MovieBrowse id={genres && genres[3].id} />
       </div>
     </div>
   )
