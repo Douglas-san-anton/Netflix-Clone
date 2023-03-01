@@ -24,10 +24,63 @@ export const fetchMovies = async (cb) => {
 }
 
 // type puede ser tv o movies
-export const fetchDiscovers = async (cb, type, id) => {
+export const fetchByGenres = async (cb, id) => {
   try {
     const { data: { results },
-    } = await axios.get(VITE_API_URL + fetchDiscoverMovies(id, type), {
+    } = await axios.get(VITE_API_URL + byGenresEndpoints(id), {
+      params: {
+        api_key: VITE_API_KEY
+      },
+    })
+
+    cb((previous) => {
+      return { ...previous, movies: results, isLoading: false }
+    })
+  } catch (error) {
+    console.log(error);
+  }
+
+}
+export const fetchTrending = async (cb) => {
+  try {
+    const { data: { results },
+    } = await axios.get(VITE_API_URL + trendingEndpoint, {
+      params: {
+        api_key: VITE_API_KEY
+      },
+    })
+
+    cb((previous) => {
+      return { ...previous, movies: results, isLoading: false }
+    })
+  } catch (error) {
+    console.log(error);
+  }
+
+}
+
+export const fetchNetflixOriginals = async (cb) => {
+  try {
+    const { data: { results },
+    } = await axios.get(VITE_API_URL + netflixOriginalsEndpoint, {
+      params: {
+        api_key: VITE_API_KEY
+      },
+    })
+
+    cb((previous) => {
+      return { ...previous, movies: results, isLoading: false }
+    })
+  } catch (error) {
+    console.log(error);
+  }
+
+}
+
+export const fetchTopRated = async (cb) => {
+  try {
+    const { data: { results },
+    } = await axios.get(VITE_API_URL + TopRatedEndpoint, {
       params: {
         api_key: VITE_API_KEY
       },
