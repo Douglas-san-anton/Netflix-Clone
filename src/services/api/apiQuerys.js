@@ -1,5 +1,5 @@
 import axios from "axios";
-import { fetchDiscoverMovies } from '../api/endpoints'
+// import { fetchDiscoverMovies } from '../api/endpoints'
 
 const { VITE_API_KEY, VITE_API_URL } = import.meta.env
 
@@ -93,4 +93,11 @@ export const fetchTopRated = async (cb) => {
     console.log(error);
   }
 
+}
+
+export const fetchFunctions = {
+  tv: fetchNetflixOriginals,
+  movie: fetchMovies,
+  topRated: fetchTopRated,
+  trending: fetchTrending,
 }
