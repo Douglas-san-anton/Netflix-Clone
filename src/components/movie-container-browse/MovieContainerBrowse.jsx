@@ -8,20 +8,22 @@ export const MovieContainerBrowse = ({ type, title }) => {
   let { genres } = useContext(Context)
   const [data, setData] = useState({ movies: [], isLoading: true })
 
-
-  useEffect(() => {
+  function loadData(type, title) {
     if (type !== 'genres') {
       fetchFunctions[type](setData)
-    } else {
-
+    } else if (type === 'genres' && genres) {
+      let genre = genres.find(e => e.name === title)
+      fetchFunctions[type](setData, genre.id)
     }
-  }, [])
+  }
+
+  useEffect(() => {
+    data.isLoading && genres && loadData(type, title)
+  }, [genres])
 
   return (
     <>
-      {
-        !data.isLoading && type !== 'genres' && <MovieBrowse title={title} movies={data.movies} />
-      }
+      {!data.isLoading && <MovieBrowse title={title} movies={data.movies} />}
     </>
   )
 }

@@ -9,6 +9,9 @@ export const CatalogueBrowse = () => {
       <MovieContainerBrowse type={'popular'} title={'Populares en Netflix'} />
       <MovieContainerBrowse type={'topRated'} title={'Mas vistas'} />
       <MovieContainerBrowse type={'trending'} title={'Tendencias'} />
+      <MovieContainerBrowse type={'genres'} title={'Action'} />
+      <MovieContainerBrowse type={'genres'} title={'Comedy'} />
+      <MovieContainerBrowse type={'genres'} title={'Drama'} />
     </div>
   )
 }
