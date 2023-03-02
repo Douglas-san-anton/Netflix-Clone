@@ -1,25 +1,27 @@
 import { useContext, useEffect, useState } from "react"
 import { Context } from '../../context/DataContext.jsx';
-import { fetchByGenres } from "../../services/api/apiQuerys.js";
+import { fetchFunctions } from "../../services/api/apiQuerys.js";
+import { MovieBrowse } from "../movie-browse/MovieBrowse.jsx";
 
-const obj = {
-  clasificationA: ['tv', 'movie'],
-  clasificationB: ['topTranding', 'movie']
-}
-
-export const MovieContainerBrowse = ({ programationType }) => {
+export const MovieContainerBrowse = ({ type, title }) => {
 
   let { genres } = useContext(Context)
   const [data, setData] = useState({ movies: [], isLoading: true })
 
 
   useEffect(() => {
-    // console.log(id)
-    // fetchByGenres(setData, 'movie', id)
+    if (type !== 'genres') {
+      fetchFunctions[type](setData)
+    } else {
+
+    }
   }, [])
 
   return (
     <>
+      {
+        !data.isLoading && type !== 'genres' && <MovieBrowse title={title} movies={data.movies} />
+      }
     </>
   )
 }

@@ -1,5 +1,5 @@
 import axios from "axios";
-// import { fetchDiscoverMovies } from '../api/endpoints'
+import { netflixOriginalsEndpoint, trendingEndpoint, TopRatedEndpoint, byGenresEndpoints } from '../api/endpoints'
 
 const { VITE_API_KEY, VITE_API_URL } = import.meta.env
 
@@ -12,15 +12,21 @@ export const fetchGenres = async (cb) => {
   cb(data)
 }
 
-export const fetchMovies = async (cb) => {
-  const { data: { results },
-  } = await axios.get(`${VITE_API_URL}/movie/popular`, {
-    params: {
-      api_key: VITE_API_KEY
-    },
-  })
+export const fetchPopular = async (cb) => {
+  try {
+    const { data: { results },
+    } = await axios.get(VITE_API_URL + `/movie/popular`, {
+      params: {
+        api_key: VITE_API_KEY
+      },
+    })
 
-  cb(results)
+    cb((previous) => {
+      return { ...previous, movies: results, isLoading: false }
+    })
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 // type puede ser tv o movies
@@ -97,7 +103,8 @@ export const fetchTopRated = async (cb) => {
 
 export const fetchFunctions = {
   tv: fetchNetflixOriginals,
-  movie: fetchMovies,
+  popular: fetchPopular,
   topRated: fetchTopRated,
   trending: fetchTrending,
+  genres: fetchByGenres
 }
