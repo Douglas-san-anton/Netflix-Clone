@@ -15,7 +15,7 @@ export const fetchGenres = async (cb) => {
 export const fetchPopular = async (cb) => {
   try {
     const { data: { results },
-    } = await axios.get(VITE_API_URL + `/movie/popular`, {
+    } = await axios.get(`${VITE_API_URL}/movie/popular`, {
       params: {
         api_key: VITE_API_KEY
       },

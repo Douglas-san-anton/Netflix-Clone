@@ -6,7 +6,7 @@ const { VITE_URL_IMAGE } = import.meta.env
 export const MovieBrowse = ({ movies, title }) => {
 
   return (
-    <div>
+    <div className={Styles.body}>
       <h1 className={Styles.title}>{title}</h1>
       <div className={Styles.container}>
         {movies && movies?.map((movie) =>

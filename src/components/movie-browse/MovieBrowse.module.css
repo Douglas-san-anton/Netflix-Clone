@@ -1,3 +1,7 @@
+.body {
+  margin: 2rem 0;
+}
+
 .container {
   display: flex;
 }
@@ -10,7 +14,7 @@
 .img {
   background-size: cover;
   background-position: center;
-  height: 230px;
+  width: 230px;
   margin: 0 .5rem .3rem 0;
   border-radius: 3px;
 }
