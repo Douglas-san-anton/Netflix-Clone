@@ -57,7 +57,7 @@
   align-items: center;
   border: none;
   position: absolute;
-  top: 75%;
+  top: 77%;
   left: 5%;
   height: 45px;
   border-radius: 5px;
@@ -85,7 +85,7 @@
   padding: 0 15px;
   border: none;
   position: absolute;
-  top: 75%;
+  top: 77%;
   left: 45%;
   z-index: 1;
   cursor: pointer;
