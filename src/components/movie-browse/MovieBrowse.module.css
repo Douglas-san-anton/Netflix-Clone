@@ -5,7 +5,9 @@
 .container {
   display: flex;
 }
-
+.card{
+  margin: 0 5rem 0 0 ;
+}
 .title {
   color: white;
   font-size: 22px;
@@ -19,3 +21,6 @@
   border-radius: 3px;
 }
 
+.swiperr {
+  margin-right: 10px !important;
+}
