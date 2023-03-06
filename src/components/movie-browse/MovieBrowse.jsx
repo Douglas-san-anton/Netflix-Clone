@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import Styles from '../movie-browse/MovieBrowse.module.css'
+import '../movie-browse/MovieBrowse.css'
 import { CardMovieBrowse } from '../card-movie-browse/CardMovieBrowse';
 import { Navigation, Pagination, Controller } from 'swiper';
 import 'swiper/css/navigation'
@@ -12,9 +12,9 @@ export const MovieBrowse = ({ movies, title }) => {
 
 
   return (
-    <div className={Styles.body}>
-      <h1 className={Styles.title}>{title}</h1>
-      <div className={Styles.container}>
+    <div className='body'>
+      <h1 className='title'>{title}</h1>
+      <div className='container'>
         <Swiper
           slidesPerView={6}
           navigation={true}
@@ -24,8 +24,8 @@ export const MovieBrowse = ({ movies, title }) => {
           onSwiper={setControlledSwiper}
         >
           {movies && movies.map(e =>
-            <SwiperSlide className={Styles.swiperr} >
-              <CardMovieBrowse className={Styles.card} id={e.id} poster_path={e.poster_path} />
+            <SwiperSlide className='swiperr' >
+              <CardMovieBrowse className='card' id={e.id} poster_path={e.poster_path} />
             </SwiperSlide>
           )
           }
