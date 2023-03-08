@@ -4,5 +4,13 @@
   "home.nav.login":"Iniciar sesión",
   "home.hero.title":"Películas y series ilimitadas y mucho más",
   "home.hero.subtitle":"Disfruta donde quieras. Cancela cuando quieras.",
-  "home.watch-tv.title":"Disfruta en tu TV"
+  "home.watch-tv.title":"Disfruta en tu TV",
+  "home.watch-tv.subtitle":"Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.",
+  "home.download.title":"Descarga tus series para verlas offline",
+  "home.download.subtitle":"Guarda tu contenido favorito y tendrás siempre algo para ver.",
+  "home.download.p1":"Stranger Things",
+  "home.download.p2":"Descargando...",
+  "home.device.title":"Disfruta donde quieras",
+  "home.device.subtitle":"Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo adicional."
+
 }

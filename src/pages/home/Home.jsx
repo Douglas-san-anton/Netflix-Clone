@@ -64,7 +64,7 @@ export const Home = () => {
         <div className={Styles.watchTv__container}>
           <div className={Styles.watchTv__text}>
             <h1>{t('home.watch-tv.title')}</h1>
-            <h2>Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</h2>
+            <h2>{t('home.watch-tv.subtitle')}</h2>
           </div>
 
           <div className={Styles.watchTv__img_container}>
@@ -84,8 +84,8 @@ export const Home = () => {
       <section className={Styles.download}>
         <div className={Styles.download__container}>
           <div className={Styles.download__text}>
-            <h1>Descarga tus series para verlas offline</h1>
-            <h2>Guarda tu contenido favorito y tendrás siempre algo para ver.</h2>
+            <h1>{t('home.download.title')}</h1>
+            <h2>{t('home.download.subtitle')}</h2>
           </div>
 
           <div className={Styles.download__img_container}>
@@ -97,8 +97,8 @@ export const Home = () => {
                 </div>
 
                 <div className={Styles.download__card__text}>
-                  <p>Stranger Things</p>
-                  <p>Descargando...</p>
+                  <p>{t('home.download.p1')}</p>
+                  <p>{t('home.download.p2')}</p>
                 </div>
 
                 <div className={Styles.download__custom_animation}></div>
@@ -112,8 +112,8 @@ export const Home = () => {
       <section className={Styles.device}>
         <div className={Styles.device__container}>
           <div className={Styles.device__text}>
-            <h1>Disfruta donde quieras</h1>
-            <h2>Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo adicional.</h2>
+            <h1>{t('home.device.title')}</h1>
+            <h2>{t('home.device.subtitle')}</h2>
           </div>
 
           <div className={Styles.device__img_container}>

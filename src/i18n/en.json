@@ -2,7 +2,14 @@
   "home.nav.select.es": "Spanish",
   "home.nav.select.en": "English",
   "home.nav.login":"Log in",
-  "home.hero.title":"Unlimited movies and series and much more",
+  "home.hero.title":"Unlimited movies and series and much more.",
   "home.hero.subtitle":"Enjoy wherever you want. Cancel whenever you want.",
-  "home.watch-tv.title":"Enjoy on your TV"
+  "home.watch-tv.title":"Enjoy on your TV",
+  "home.watch-tv.subtitle":"Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.",
+  "home.download.title":"Download your series to watch them offline.",
+  "home.download.subtitle":"Save your favorite content and you'll always have something to watch.",
+  "home.download.p1":"Stranger Things",
+  "home.download.p2":"Downloading...",
+  "home.device.title":"Enjoy where you want",
+  "home.device.subtitle":"Unlimited movies and series on your phone, tablet, computer and TV at no additional cost."
 }
