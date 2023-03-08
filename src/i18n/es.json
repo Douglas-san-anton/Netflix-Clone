@@ -2,6 +2,8 @@
   "home.nav.select.es": "Español",
   "home.nav.select.en": "Ingles",
   "home.nav.login":"Iniciar sesión",
+  "home.form.title":"¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.",
+  "home.form.btn":"Comenzar",
   "home.hero.title":"Películas y series ilimitadas y mucho más",
   "home.hero.subtitle":"Disfruta donde quieras. Cancela cuando quieras.",
   "home.watch-tv.title":"Disfruta en tu TV",
@@ -11,6 +13,8 @@
   "home.download.p1":"Stranger Things",
   "home.download.p2":"Descargando...",
   "home.device.title":"Disfruta donde quieras",
-  "home.device.subtitle":"Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo adicional."
+  "home.device.subtitle":"Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo adicional.",
+  "home.kids.title":"Crea perfiles para niños",
+  "home.kids.subtitle":"Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía."
 
 }

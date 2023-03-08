@@ -133,8 +133,8 @@ export const Home = () => {
       <section className={Styles.kids}>
         <div className={Styles.kids__container}>
           <div className={Styles.kids__text}>
-            <h1>Crea perfiles para niños</h1>
-            <h2>Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.</h2>
+            <h1>{t('home.kids.title')}</h1>
+            <h2>{t('home.kids.subtitle')}</h2>
           </div>
 
           <div className={Styles.kids__img_container}>
