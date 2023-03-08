@@ -1,17 +1,20 @@
 import React from 'react'
 import { Form } from '../form/Form'
 import Styles from './Faq.module.css'
+import { useTranslation } from 'react-i18next'
 
 export const Faq = () => {
+  const { t } = useTranslation()
+
   return (
     <section className={Styles.faq}>
       <div className={Styles.faq__container}>
-        <h1>Preguntas frecuentes</h1>
+        <h1>{t('home.faq.title')}</h1>
         <ul className={Styles.faq__ul}>
           <li className={Styles.faq__questions}>
             <input type="checkbox" id="q1" />
             <label className={Styles.faq__question} for="q1">
-              {"¿Qué es Netflix?"}
+              {t('home.faq.what-is-netflix')}
               <svg id="thin-x" viewBox="0 0 26 26" focusable="true" className={Styles.svg__open} >
                 <path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path>
               </svg>
