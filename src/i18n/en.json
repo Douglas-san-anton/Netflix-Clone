@@ -1,7 +1,8 @@
 {
-  "home.nav.select.title":"Español",
   "home.nav.select.es": "Spanish",
   "home.nav.select.en": "English",
+  "home.nav.login":"Log in",
   "home.hero.title":"Unlimited movies and series and much more",
-  "home.hero.subtitle":"Enjoy wherever you want. Cancel whenever you want."
+  "home.hero.subtitle":"Enjoy wherever you want. Cancel whenever you want.",
+  "home.watch-tv.title":"Enjoy on your TV"
 }

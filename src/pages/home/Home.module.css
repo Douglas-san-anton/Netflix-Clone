@@ -73,6 +73,8 @@
   font-weight: 400;
   line-height: normal;
   padding: 8px 17px;
+  text-align: center;
+  min-width: 126px;
   text-decoration: none;
   color: white;
   border-radius: 3px;

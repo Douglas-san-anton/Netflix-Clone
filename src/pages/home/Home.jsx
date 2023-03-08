@@ -46,7 +46,7 @@ export const Home = () => {
               </select>
 
             </div>
-            <Link className={Styles.nav__button} to={'/login'}>Iniciar sesión</Link>
+            <Link className={Styles.nav__button} to={'/login'}>{t('home.nav.login')}</Link>
           </div>
         </nav>
         <div className={Styles.hero__bg_opacity}></div>
@@ -63,7 +63,7 @@ export const Home = () => {
       <section className={Styles.watchTv}>
         <div className={Styles.watchTv__container}>
           <div className={Styles.watchTv__text}>
-            <h1>Disfruta en tu TV</h1>
+            <h1>{t('home.watch-tv.title')}</h1>
             <h2>Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</h2>
           </div>
 
