@@ -1,93 +1,108 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import Styles from './Footer.module.css'
+import { useTranslation } from 'react-i18next'
 
 export const Footer = () => {
+  const { t, i18n } = useTranslation()
+  const [language, setLanguage] = useState('en')
+  const selectRef = useRef(null);
+
+  const onChangeLanguage = (event) => {
+    const newLanguage = event.target.value;
+    setLanguage(newLanguage);
+    i18n.changeLanguage(newLanguage);
+  };
+
+  const onClickSelect = () => {
+    selectRef.current.click();
+  };
+
   return (
     <footer className={Styles.footer__container}>
       <div className={Styles.footer__site}>
-        <p className={Styles.footer__top}>{'¿Preguntas? Llama al '}
+        <p className={Styles.footer__top}>{t('home.footer.header')}
           <a href="tel:0800 345 1593">0800 345 1593</a>
         </p>
         <ul className={Styles.footer__links}>
           <li className={Styles.footer__links_item}>
             <a className={Styles.footer__link} href="https://help.netflix.com/support/412">
-              <span>Preguntas frecuentes</span>
+              <span>{t('home.footer.frequent-questions')}</span>
             </a>
           </li>
           <li className={Styles.footer__links_item}>
             <a className={Styles.footer__link} href="https://help.netflix.com">
-              <span>Centro de ayuda</span>
+              <span>{t('home.footer.help-center')}</span>
             </a>
           </li>
           <li className={Styles.footer__links_item}>
             <a className={Styles.footer__link} href="/youraccount">
-              <span>Cuenta</span>
+              <span>{t('home.footer.account')}</span>
             </a>
           </li>
           <li className={Styles.footer__links_item}>
             <a className={Styles.footer__link} href="https://media.netflix.com/">
-              <span>Prensa</span>
+              <span>{t('home.footer.press')}</span>
             </a>
           </li>
           <li className={Styles.footer__links_item}>
             <a className={Styles.footer__link} href="http://ir.netflix.com/">
-              <span>Relaciones con inversionistas</span>
+              <span>{t('home.footer.investor-relations')}</span>
             </a>
           </li>
           <li className={Styles.footer__links_item}>
             <a className={Styles.footer__link} href="https://jobs.netflix.com/jobs">
-              <span>Empleo</span>
+              <span>{t('home.footer.employment')}</span>
             </a>
           </li>
           <li className={Styles.footer__links_item}>
             <a className={Styles.footer__link} href="/watch">
-              <span>Formas de ver</span>
+              <span>{t('home.footer.ways-of-seeing')}</span>
             </a>
           </li>
           <li className={Styles.footer__links_item}>
             <a className={Styles.footer__link} href="https://help.netflix.com/legal/termsofuse">
-              <span>Términos de uso</span>
+              <span>{t('home.footer.terms-of-use')}</span>
             </a>
           </li>
           <li className={Styles.footer__links_item}>
             <a className={Styles.footer__link} href="https://help.netflix.com/legal/privacy">
-              <span>Privacidad</span>
+              <span>{t('home.footer.privacy')}</span>
             </a>
           </li>
           <li className={Styles.footer__links_item}>
             <a className={Styles.footer__link} href="#">
-              <span>Preferencias de cookies</span>
+              <span>{t('home.footer.cookie-preferences')}</span>
             </a>
           </li>
           <li className={Styles.footer__links_item}>
             <a className={Styles.footer__link} href="https://help.netflix.com/legal/corpinfo">
-              <span>Información corporativa</span>
+              <span>{t('home.footer.corporate-information')}</span>
             </a>
           </li>
           <li className={Styles.footer__links_item}>
             <a className={Styles.footer__link} href="https://help.netflix.com/contactus">
-              <span>Contáctanos</span>
+              <span>{t('home.footer.contact-us')}</span>
             </a>
           </li>
           <li className={Styles.footer__links_item}>
             <a className={Styles.footer__link} href="https://fast.com">
-              <span>Prueba de velocidad</span>
+              <span>{t('home.footer.speed-test')}</span>
             </a>
           </li>
           <li className={Styles.footer__links_item}>
             <a className={Styles.footer__link} href="https://help.netflix.com/legal/notices">
-              <span>Avisos legales</span>
+              <span>{t('home.footer.legal-notices')}</span>
             </a>
           </li>
           <li className={Styles.footer__links_item}>
             <a className={Styles.footer__link} href="https://www.netflix.com/ar/browse/genre/839338">
-              <span>Solo en Netflix</span>
+              <span>{t('home.footer.only-on-netflix')}</span>
             </a>
           </li>
         </ul>
-        <select className={Styles.footer__select_lang}>
-          <option value="/ar/" data-language="es">Español</option>
-          <option value="/ar-en/" data-language="en">English</option>
+        <select value={language} onClick={onClickSelect} onChange={onChangeLanguage} ref={selectRef} className={Styles.footer__select_lang}>
+          <option value="es">{t('home.nav.select.es')}</option>
+          <option value="en">{t('home.nav.select.en')}</option>
         </select>
         <p>Netflix Argentina</p>
       </div>

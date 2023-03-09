@@ -31,7 +31,25 @@
   "home.faq.what-can-i.answer":"Netflix tiene un amplio catálogo de películas, series, documentales, animes, originales premiados y más. Todo lo que quieras ver, cuando quieras.",
   "home.faq.is-netflix-good.title":"¿Es bueno Netflix para los niños?",
   "home.faq.is-netflix-good.answer1":"La experiencia de Netflix para niños está incluida en la membresía para que los padres tengan el control mientras los peques disfrutan series y películas familiares en su propio espacio.",
-  "home.faq.is-netflix-good.answer2":"Los perfiles para niños incluyen controles parentales protegidos por PIN que te permiten restringir el contenido que pueden ver los niños en función de la clasificación por edad y bloquear determinados títulos que no quieras que los niños vean."
+  "home.faq.is-netflix-good.answer2":"Los perfiles para niños incluyen controles parentales protegidos por PIN que te permiten restringir el contenido que pueden ver los niños en función de la clasificación por edad y bloquear determinados títulos que no quieras que los niños vean.",
+  "home.footer.header":"¿Preguntas? Llama al ",
+  "home.footer.frequent-questions":"Preguntas frecuentes",
+  "home.footer.help-center":"Centro de ayuda",
+  "home.footer.account":"Cuenta",
+  "home.footer.press":"Prensa",
+  "home.footer.investor-relations":"Relaciones con inversionistas",
+  "home.footer.employment":"Empleo",
+  "home.footer.ways-of-seeing":"Formas de ver",
+  "home.footer.terms-of-use":"Términos de uso",
+  "home.footer.privacy":"Privacidad",
+  "home.footer.cookie-preferences":"Preferencias de cookies",
+  "home.footer.corporate-information":"Información corporativa",
+  "home.footer.contact-us":"Contáctanos",
+  "home.footer.speed-test":"Prueba de velocidad",
+  "home.footer.legal-notices":"Avisos legales",
+  "home.footer.only-on-netflix":"Sólo en Netflix"
+
+
 
 
 }

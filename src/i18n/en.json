@@ -31,7 +31,23 @@
   "home.faq.what-can-i.answer":"Netflix has a wide catalog of movies, series, documentaries, anime, award-winning originals, and more. Everything you want to see, whenever you want.",
   "home.faq.is-netflix-good.title":"Is Netflix good for kids?",
   "home.faq.is-netflix-good.answer1":"The Netflix experience for kids is included in the membership so that parents are in control while the little ones enjoy family series and movies in their own space.",
-  "home.faq.is-netflix-good.answer2":"Kids profiles include PIN-protected parental controls that let you restrict what kids can see based on age ratings and block certain titles you don't want kids to see."
+  "home.faq.is-netflix-good.answer2":"Kids profiles include PIN-protected parental controls that let you restrict what kids can see based on age ratings and block certain titles you don't want kids to see.",
+  "home.footer.header":"Questions? Call to ",
+  "home.footer.frequent-questions":"Frequent questions",
+  "home.footer.help-center":"Help Center",
+  "home.footer.account":"Account",
+  "home.footer.press":"Press",
+  "home.footer.investor-relations":"Investor Relations",
+  "home.footer.employment":"Employment",
+  "home.footer.ways-of-seeing":"Ways of seeing",
+  "home.footer.terms-of-use":"Terms of use",
+  "home.footer.privacy":"Privacy",
+  "home.footer.cookie-preferences":"Cookie preferences",
+  "home.footer.corporate-information":"Corporate information",
+  "home.footer.contact-us":"Contact us",
+  "home.footer.speed-test":"Speed Test",
+  "home.footer.legal-notices":"Legal notices",
+  "home.footer.only-on-netflix":"Only on Netflix"
 
 
 }
