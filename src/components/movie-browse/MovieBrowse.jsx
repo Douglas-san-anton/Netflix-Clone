@@ -16,7 +16,9 @@ export const MovieBrowse = ({ movies, title }) => {
       <h1 className='title'>{title}</h1>
       <div className='container'>
         <Swiper
-          slidesPerView={6}
+          slidesPerView={5.7}
+          slidesPerGroup={5}
+          speed={500}
           navigation={true}
           modules={[Navigation, Pagination, Controller]}
           controller={{ control: controlledSwiper }}
@@ -24,7 +26,7 @@ export const MovieBrowse = ({ movies, title }) => {
           onSwiper={setControlledSwiper}
         >
           {movies && movies.map(e =>
-            <SwiperSlide className='swiperr' >
+            <SwiperSlide className='swiperr last-slide' >
               <CardMovieBrowse className='card' id={e.id} poster_path={e.poster_path} />
             </SwiperSlide>
           )

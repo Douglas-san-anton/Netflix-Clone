@@ -45,3 +45,7 @@
   top: 22px;
   right: -12px;
 }
+
+.last-slide {
+  margin-right: 0 !important;
+}
