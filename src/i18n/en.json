@@ -58,5 +58,7 @@
   "login.main.first-time":"First time on Netflix?",
   "login.main.subscribe-now":" Subscribe now",
   "login.main.span":"This page is protected by Google reCAPTCHA to verify that you are not a robot.",
-  "login.main.more-info":"More info."
+  "login.main.more-info":"More info.",
+  "login.footer.corporate-information":"Corporate information",
+  "login.footer.select-the-language":"Select the language"
 }
