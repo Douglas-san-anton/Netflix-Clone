@@ -47,9 +47,16 @@
   "home.footer.contact-us":"Contáctanos",
   "home.footer.speed-test":"Prueba de velocidad",
   "home.footer.legal-notices":"Avisos legales",
-  "home.footer.only-on-netflix":"Sólo en Netflix"
+  "home.footer.only-on-netflix":"Sólo en Netflix",
 
-
-
-
+  "login.main.title":"Inicia sesión",
+  "login.main.email":"Email o número de teléfono",
+  "login.main.password":"Email o número de teléfono",
+  "login.main.btn-link":"Iniciar sesión",
+  "login.main.remember-me":"Recuérdame",
+  "login.main.help":"¿Necesitas ayuda?",
+  "login.main.first-time":"¿Primera vez en Netflix?",
+  "login.main.subscribe-now":" Suscríbete ahora",
+  "login.main.span":"Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot.",
+  "login.main.more-info":"Más info."
 }

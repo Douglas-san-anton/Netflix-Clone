@@ -47,7 +47,16 @@
   "home.footer.contact-us":"Contact us",
   "home.footer.speed-test":"Speed Test",
   "home.footer.legal-notices":"Legal notices",
-  "home.footer.only-on-netflix":"Only on Netflix"
+  "home.footer.only-on-netflix":"Only on Netflix",
 
-
+  "login.main.title":"Log in",
+  "login.main.email":"Email or phone number",
+  "login.main.password":"Password",
+  "login.main.btn-link":"Log in",
+  "login.main.remember-me":"Remember me",
+  "login.main.help":"Need help?",
+  "login.main.first-time":"First time on Netflix?",
+  "login.main.subscribe-now":" Subscribe now",
+  "login.main.span":"This page is protected by Google reCAPTCHA to verify that you are not a robot.",
+  "login.main.more-info":"More info."
 }
