@@ -18,7 +18,7 @@ export const MovieBrowse = ({ movies, title }) => {
         <Swiper
           slidesPerView={5.7}
           slidesPerGroup={5}
-          speed={500}
+          speed={800}
           navigation={true}
           modules={[Navigation, Pagination, Controller]}
           controller={{ control: controlledSwiper }}
