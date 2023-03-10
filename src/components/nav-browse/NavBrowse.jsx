@@ -1,6 +1,7 @@
 import React from 'react'
 import Styles from './NavBrowse.module.css'
 import logo from '../../assets/netflix.png'
+import { Link } from 'react-router-dom'
 
 export const NavBrowse = () => {
   return (
@@ -8,9 +9,9 @@ export const NavBrowse = () => {
       <div className={Styles.pinning__header}>
         <div className={Styles.pinning__header_container}>
           <div className={Styles.main_header}>
-            <a aria-label="Netflix" className={Styles.logo} href="/">
+            <Link aria-label="Netflix" className={Styles.logo} to="/home">
               <img src={logo} alt="logo" />
-            </a>
+            </Link>
             <ul className={Styles.tabbed__primary_navigation}>
               <li className={Styles.navigation__menu}>
                 <a className={Styles.menu_trigger} role="button" aria-haspopup="true" href="todo" tabIndex="0">Explorar</a>
@@ -62,7 +63,7 @@ export const NavBrowse = () => {
                   <div className={Styles.account__dropdown_button}>
                     <a href="/YourAccount" role="button" tabIndex="0" aria-haspopup="true" aria-expanded="false" aria-label="Maria Jose - Cuenta y configuración">
                       <span className={Styles.profile__link} role="presentation">
-                        <img className={Styles.profile__icon} src="http://occ-0-7118-114.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeD-D1z0XBTshF8RleitH-BbW2-bfi_8NTuyMJPGSD-db9NLp-goDTQHTmoPI-qCCB5Y9yjqHmnwAj1QwDPPZOtV5AiDxkw.png?r=d0a" alt=""/>
+                        <img className={Styles.profile__icon} src="http://occ-0-7118-114.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABeD-D1z0XBTshF8RleitH-BbW2-bfi_8NTuyMJPGSD-db9NLp-goDTQHTmoPI-qCCB5Y9yjqHmnwAj1QwDPPZOtV5AiDxkw.png?r=d0a" alt="" />
                       </span>
                     </a>
                     <span className={Styles.caret} role="presentation"></span>
