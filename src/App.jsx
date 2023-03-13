@@ -10,7 +10,7 @@ function App() {
     <Router>
       <DataShare>
         <Routes>
-          <Route path='/home' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/browse' element={<Browse />} />
         </Routes>
