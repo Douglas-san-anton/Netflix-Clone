@@ -17,7 +17,7 @@ export const Login = () => {
           <img className={Styles.login__wrapper_img} src={bg} alt="" />
         </div>
         <div className={Styles.login__header}>
-          <Link to={'/home'} className={Styles.login__logo}><img src={logo} alt="" /></Link>
+          <Link to={'/'} className={Styles.login__logo}><img src={logo} alt="" /></Link>
         </div>
 
         <div className={Styles.login__body}>
