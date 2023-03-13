@@ -9,7 +9,7 @@ export const NavBrowse = () => {
       <div className={Styles.pinning__header}>
         <div className={Styles.pinning__header_container}>
           <div className={Styles.main_header}>
-            <Link aria-label="Netflix" className={Styles.logo} to="/">
+            <Link aria-label="Netflix" className={Styles.logo} to="/home">
               <img src={logo} alt="logo" />
             </Link>
             <ul className={Styles.tabbed__primary_navigation}>
